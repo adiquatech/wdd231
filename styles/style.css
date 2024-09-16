@@ -1,0 +1,143 @@
+/* General css Property */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(10, 50%, 66%);
+}
+.autor{
+    display: flex;
+    align-items: center;
+}
+.profile-pic{
+    width: 50px;
+    height: 50px;
+}
+.hamburger{
+    display: none;
+}
+.name{
+    font-size: 24px;
+    margin: 0px;
+}
+.nav{
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    gap: 20px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav ul a{
+    color: white;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: gold;
+}
+footer{
+    background-color: hsl(10, 100%, 88%);
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+
+
+/* HomePage css property */
+.course-work{
+    background-color: hsl(0, 0%, 90%);
+}
+.course-work h2{
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+.place{
+    background-color: hsl(0, 0%, 90%);
+    justify-content: center;
+}
+.place h2{
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+}
+.place-img{
+    width: 200px;
+    display: none;;
+}
+.place p{
+    justify-content: center;
+}
+.certificate{
+    background-color: hsl(0, 0%, 90%);
+    margin: 0px;
+    padding: 0px;
+}
+.certificate h2{
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+
+}
+.certificate-options {
+    background-color: hsl(0, 0%, 90%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+}
+
+.certificate-options h4 {
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    margin: 0;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.course-list h4 {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .course-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hamburger{
+        display: inline;
+    }
+    .course-list {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+
+}
