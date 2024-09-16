@@ -71,7 +71,7 @@ footer{
 }
 .place-img{
     width: 200px;
-    display: none;;
+    /* display: none;; */
 }
 .place p{
     justify-content: center;
@@ -88,46 +88,56 @@ footer{
 
 }
 .certificate-options {
-    background-color: hsl(0, 0%, 90%);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 0px;
-    width: 100%;
+    border-bottom: 2px solid hsl(0, 0%, 20%);
 }
-
-.certificate-options h4 {
-    color: white;
+.certificate-options button{
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: hsl(0, 0%, 20%);
-    margin: 0;
-    padding: 10px;
-    border: 1px solid;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
 }
 
-.course-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    margin: 20px 0;
-    padding: 0;
+/* Course Detail Page css property */
+.completed {
+    background-color: lightgreen;
 }
 
-.course-list h4 {
-    background-color: #f0f0f0;
-    text-align: center;
+.incomplete {
+    background-color: lightcoral;
+}
+
+.course-card {
     padding: 10px;
-    margin: 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 0px ;
+    text-align: center;
+
+}
+
+.course-title {
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+#courseList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    gap: 20px;
+    margin-top: 20px;
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .course-list {
+    .course-card {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     }
 }
@@ -136,8 +146,11 @@ footer{
     .hamburger{
         display: inline;
     }
-    .course-list {
+    .course-card {
         grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+    #courseList {
+        grid-template-columns: 1fr; /* 1 column for small screens */
     }
 
 }

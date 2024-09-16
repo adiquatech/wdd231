@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
 // Course Array
 const courses = [
   {
@@ -88,3 +89,45 @@ const courses = [
       completed: false
   }
 ]
+
+
+  // Function to display courses
+  function displayCourses(filteredCourses) {
+      const courseList = document.getElementById('courseList');
+      courseList.innerHTML = ''; // Clear the existing courses
+  
+      filteredCourses.forEach(course => {
+          const courseDiv = document.createElement('div');
+          courseDiv.classList.add('course-card');
+          courseDiv.classList.add(course.completed ? 'completed' : 'incomplete');
+          
+          courseDiv.innerHTML = `
+              <h4 class="course-title">${course.subject}${course.number}</h4>
+              <p>Credits: ${course.credits}</p>
+          `;
+          courseList.appendChild(courseDiv);
+      });
+  
+      // Calculate and display total credits
+      const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+      document.getElementById('totalCredits').textContent = totalCredits;
+  }
+  
+  // Function to filter courses by subject
+  function filterCourses(subject) {
+      if (subject === 'All') {
+          displayCourses(courses);
+      } else {
+          const filteredCourses = courses.filter(course => course.subject === subject);
+          displayCourses(filteredCourses);
+      }
+  }
+  
+  // Event listeners for filter buttons
+  document.getElementById('allCourses').addEventListener('click', () => filterCourses('All'));
+  document.getElementById('cseCourses').addEventListener('click', () => filterCourses('CSE'));
+  document.getElementById('wddCourses').addEventListener('click', () => filterCourses('WDD'));
+  
+  // Display all courses initially
+  displayCourses(courses);
+  
