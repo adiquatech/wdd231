@@ -6,18 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const lastModified = document.lastModified;
   document.querySelector(".lastModified").textContent = `Last Modified: ${lastModified}`;
 });
-
-// const hamburgerIcon = document.querySelector(".hamburger");
-// const nav = document.querySelector(".nav");
-// hamburgerIcon.addEventListener("click", function() {
-//     nav.classList.toggle("active");
-// });
+// Hamburger
 function toggleMenu() {
     var navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("active");
   }
-
-
+  
 // Course Array
 const courses = [
   {
@@ -100,27 +94,27 @@ const courses = [
 ]
 
 
-  // Function to display courses
-  function displayCourses(filteredCourses) {
-      const courseList = document.getElementById('courseList');
-      courseList.innerHTML = ''; // Clear the existing courses
-  
-      filteredCourses.forEach(course => {
-          const courseDiv = document.createElement('div');
-          courseDiv.classList.add('course-card');
-          courseDiv.classList.add(course.completed ? 'completed' : 'incomplete');
-          
-          courseDiv.innerHTML = `
-              <h4 class="course-title">${course.subject}${course.number}</h4>
-              <p>Credits: ${course.credits}</p>
-          `;
-          courseList.appendChild(courseDiv);
-      });
-  
-      // Calculate and display total credits
-      const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
-      document.getElementById('totalCredits').textContent = totalCredits;
-  }
+// Function to display courses
+function displayCourses(filteredCourses) {
+    const courseList = document.getElementById('courseList');
+    courseList.innerHTML = '';
+    
+    filteredCourses.forEach(course => {
+        const courseDiv = document.createElement('div');
+        courseDiv.classList.add('course-card');
+        courseDiv.classList.add(course.completed ? 'completed' : 'incomplete');
+        
+        courseDiv.innerHTML = `
+            <h4 class="course-title">${course.subject}${course.number}</h4>
+            <p>Credits: ${course.credits}</p>
+        `;
+        courseList.appendChild(courseDiv);
+    });
+
+    // Calculate and display total credits
+    const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+    document.getElementById('totalCredits').textContent = totalCredits;
+}
   
   // Function to filter courses by subject
   function filterCourses(subject) {

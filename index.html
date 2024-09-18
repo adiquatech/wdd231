@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <meta name="description" content="Home page">
+    <meta name="author" content="Quadri Kolawole">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="autor">
+        <section class="autor">
             <img src="images/profile_pic.jpg" class="profile-pic" alt="Profile picture of Quadri K. Adisa">
             <h1 class="name">Quadri K. Adisa</h1>
             <div class="hamburger" onclick="toggleMenu()">☰</div>
-        </div>
-        <div class="navbar">
-            <div class="navbar-links" id="navLinks">
-              <a href="#home">Home</a>
-              <a href="chamber.html">Chamber
-              <a href="GitHub.html">GitHub Profile</a>
-              <a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a>
-            </div>
-          </div>
+        </section>
+        <section class="navbar">
+            <nav>
+                <ul class="navbar-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="chamber.html">Chamber</a></li>
+                    <li><a href="GitHub.html">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a></li>
+                </ul>
+            </nav>
+          </section>
     </header>
 
     <main>
@@ -43,19 +50,19 @@
             </div>
         </section>
         <div class="certificate">
-    <h2>Web and Computer Programming Certificate</h2>
-    <div class="certificate-options">
-        <button id="allCourses">All</button>
-        <button id="cseCourses">CSE</button>
-        <button id="wddCourses">WDD</button>
-    </div>
-    <div id="courseList"></div>
-    <div class="total-credits">
-        <h3>Total Credits: <span id="totalCredits"></span></h3>
-    </div>
-</div>
-
-</main>
+        <section>
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="certificate-options">
+                <button id="allCourses">All</button>
+                <button id="cseCourses">CSE</button>
+                <button id="wddCourses">WDD</button>
+            </div>
+            <div id="courseList"></div>
+            <div class="total-credits">
+                <h3>Total Credits: <span id="totalCredits"></span></h3>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <p class="copyright">

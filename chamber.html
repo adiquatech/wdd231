@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <meta name="description" content="Home page">
+    <meta name="author" content="Quadri Kolawole">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="autor">
+        <section class="autor">
             <img src="images/profile_pic.jpg" class="profile-pic" alt="Profile picture of Quadri K. Adisa">
             <h1 class="name">Quadri K. Adisa</h1>
-            <img class="hamburger" src="images/hamburger_menu.svg" alt="Hamburger menu icon">
-        </div>
-        <nav class="nav">
-            <ul class="ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="GitHub.html">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a></li>
-            </ul>
-        </nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </section>
+        <section class="navbar">
+            <nav>
+                <ul class="navbar-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="chamber.html">Chamber</a></li>
+                    <li><a href="GitHub.html">GitHub Profile</a></li>
+                    <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a></li>
+                </ul>
+            </nav>
+          </section>
     </header>
 
     <main>
-       
+        <section id="home"></section>
+            <h2>Welcome to Quadri's Chamber</h2>
+            <p>This is the home page of Quadri K. Adisa, a software engineer, web developer, and graphic designer. I am currently working remotely from Nigeria.</p>
+        </section>
     </main>
 
     <footer>
