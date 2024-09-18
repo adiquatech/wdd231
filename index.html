@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -12,16 +13,16 @@
         <div class="autor">
             <img src="images/profile_pic.jpg" class="profile-pic" alt="Profile picture of Quadri K. Adisa">
             <h1 class="name">Quadri K. Adisa</h1>
-            <img class="hamburger" src="images/hamburger_menu.svg" alt="Hamburger menu icon">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </div>
-        <nav class="nav">
-            <ul class="ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="GitHub.html">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-links" id="navLinks">
+              <a href="#home">Home</a>
+              <a href="chamber.html">Chamber
+              <a href="GitHub.html">GitHub Profile</a>
+              <a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/">LinkedIn</a>
+            </div>
+          </div>
     </header>
 
     <main>
@@ -34,14 +35,13 @@
                     <li></li>
                 </ul>
             </div>
+        
+            <div class="place">
+                <h2>Ibadan, Nigeria</h2>
+                <img class="place-img" src="images/place.webp" alt="Scenic view of Ibadan, Nigeria">
+                <p>Top view</p>
+            </div>
         </section>
-
-        <div class="place">
-            <h2>Ibadan, Nigeria</h2>
-            <img class="place-img" src="images/place.webp" alt="Scenic view of Ibadan, Nigeria">
-            <p>Top view</p>
-        </div>
-
         <div class="certificate">
     <h2>Web and Computer Programming Certificate</h2>
     <div class="certificate-options">
@@ -55,7 +55,7 @@
     </div>
 </div>
 
-    </main>
+</main>
 
     <footer>
         <p class="copyright">

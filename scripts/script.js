@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".lastModified").textContent = `Last Modified: ${lastModified}`;
 });
 
+// const hamburgerIcon = document.querySelector(".hamburger");
+// const nav = document.querySelector(".nav");
+// hamburgerIcon.addEventListener("click", function() {
+//     nav.classList.toggle("active");
+// });
+function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+  }
 
 
 // Course Array
