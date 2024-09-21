@@ -37,13 +37,12 @@ body {
     text-decoration: none;
     text-align: center;
     display: block;
+    justify-content: center;
 }
 .navbar-links a:hover {
     color: gold;
 }
 .navbar-links li{
-    margin: 0px;
-    padding: 0px;
     list-style-type: none;
 }
 .hamburger {
@@ -55,9 +54,6 @@ body {
   }
 .navbar-links {
     display: flex;
-  }
-.navbar-links a {
-    padding: 5px 10px;
   }
 footer{
     background-color: hsl(10, 100%, 88%);
@@ -171,14 +167,27 @@ footer{
 
 @media (max-width: 480px) {
     .navbar-links {
+        padding: 0px;
+        margin: 0px auto;
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
+        justify-content: center;
+        align-items: center;
       }
       .navbar-links.active {
         display: flex;
       }
+      .navbar-links a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
       .hamburger {
         display: inline;
       }
