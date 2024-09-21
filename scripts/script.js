@@ -113,7 +113,12 @@ function displayCourses(filteredCourses) {
 
     // Calculate and display total credits
     const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+    const CompletedCredits = filteredCourses.filter(course => course.completed)
+.reduce((total, course) => total + course.credits, 0);
+
     document.getElementById('totalCredits').textContent = totalCredits;
+    document.getElementById('CompletedCredits').textContent = CompletedCredits
+    // document.getElementById('totalCompletedCredits').textContent = `Total Completed Credits: ${totalCompletedCredits}`;
 }
   
   // Function to filter courses by subject
@@ -125,7 +130,7 @@ function displayCourses(filteredCourses) {
           displayCourses(filteredCourses);
       }
   }
-  
+
   // Event listeners for filter buttons
   document.getElementById('allCourses').addEventListener('click', () => filterCourses('All'));
   document.getElementById('cseCourses').addEventListener('click', () => filterCourses('CSE'));
