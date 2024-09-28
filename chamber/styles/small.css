@@ -1,0 +1,32 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .autor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navLinks {
+        flex-direction: column;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+        max-height: 0;
+    }
+    #hamburger {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+   
+    #cards {
+        display: block;
+    }
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navLinks.open {
+        max-height: 300px;
+    }
+    
+}

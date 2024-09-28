@@ -1,4 +1,5 @@
-[
+{ 
+  "members":    [
     {
       "name": "Tech Innovators Inc.",
       "address": "1234 Silicon Way, San Francisco, CA 94105",
@@ -77,4 +78,4 @@
       "services": ["Online Courses", "Tutoring", "Professional Certifications"]
     }
   ]
-  
+}

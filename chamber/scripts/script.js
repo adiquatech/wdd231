@@ -7,17 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".lastModified").textContent = `Last Modified: ${lastModified}`;
   });
 
-// Hamburgr
-// Toggle navigation visibility and change hamburger icon to 'X'
-document.getElementById('hamburger').addEventListener('click', function() {
-    const nav = document.getElementById('navigation');
-    const hamburger = document.getElementById('hamburger');
-    nav.classList.toggle('active');
-    
-    // Change the icon between hamburger and X
-    if (hamburger.textContent === '☰') {
-        hamburger.textContent = '✖';
-    } else {
-        hamburger.textContent = '☰';
-    }
+  document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector("#hamburger");
+    const navLink = document.querySelector(".navLinks");
+
+    hamburger.addEventListener("click", () => {
+        navLink.classList.toggle("open");
+    });
 });
