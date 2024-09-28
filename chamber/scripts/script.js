@@ -26,7 +26,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 
 
 // Chamber members
-const url = "https://santichapa.github.io/wdd231/chamber/data/members.json";
+const url = "https://adiquatech.github.io/wdd231/chamber/data/members.json";
 const cards = document.getElementById("cards");
 const contributorsCard = document.querySelector("#contributors");
 
