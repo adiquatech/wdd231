@@ -63,6 +63,8 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: hsl(0, 0%, 0%);
+
 }
 .navLinks li {
     margin: 0 10px;

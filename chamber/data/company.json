@@ -1,26 +1,6 @@
 {
     "members": [
-      {
-        "name": "Ibadan Tech Hub",
-        "phone": "+234 800 123 4567",
-        "email": "info@ibadantechhub.com",
-        "address": "12, Tech Road, Ibadan",
-        "img": "https://example.com/images/ibadan_tech_hub.png"
-      },
-      {
-        "name": "Agodi Ventures",
-        "phone": "+234 800 234 5678",
-        "email": "contact@agodiventures.com",
-        "address": "20, Agodi Crescent, Ibadan",
-        "img": "https://example.com/images/agodi_ventures.png"
-      },
-      {
-        "name": "Ibadan Agro Services",
-        "phone": "+234 800 345 6789",
-        "email": "support@ibadanagro.com",
-        "address": "45, Oluyole Estate, Ibadan",
-        "img": "https://example.com/images/ibadan_agro.png"
-      },
+    
       {
         "name": "Mokola IT Solutions",
         "phone": "+234 800 456 7890",
@@ -35,19 +15,53 @@
         "address": "120, Bodija Market, Ibadan",
         "img": "https://example.com/images/bodija_market.png"
       },
+      
       {
-        "name": "Ibadan Real Estate",
-        "phone": "+234 800 678 9012",
-        "email": "hello@ibadanrealestate.com",
-        "address": "32, Challenge Road, Ibadan",
-        "img": "https://example.com/images/ibadan_real_estate.png"
+        "name": "Top Success Accessory",
+        "phone": "+234 807 488 8888",
+        "email": "contact@topsuccessaccessory.com",
+        "address": "15, Nigeria Avenue, Ibadan",
+        "img": "https://example.com/images/top_success_accessory.png"
       },
+
       {
-        "name": "Oni & Sons Construction",
-        "phone": "+234 800 789 0123",
-        "email": "admin@onisons.com",
-        "address": "10, Dugbe Avenue, Ibadan",
-        "img": "https://example.com/images/oni_construction.png"
+        "name": "Access Bank ",
+        "phone": "+234 807 666 6666",
+        "email": "info@kennysspa.com",
+        "address": "20, Dugbe Avenue, Ibadan",
+        ",img": "https://example.com/images/kennys_spa.png"
+      },
+
+      {
+        "name": "UBA Bank",
+        "phone": "+234 807 777 7777",
+        "email": "contact@amarafashion.com",
+        "address": "25, Challenge, Ibadan",
+        "img": "https://example.com/images/amarafashion.png"
+      },
+
+      {
+        "name": "Fidelity Bank",
+        "phone": "+234 807 888 8888",
+        "email": "info@fidelitybank.com",
+        "address": "30, Challenge, Ibadan",
+        "img": "https://example.com/images/fidelity_bank.png"
+      },
+
+      {
+        "name": "Shoprite Mall",
+        "phone": "+234 807 999 9999",
+        "email": "contact@shoprite.com",
+        "address": "35, Mobile, Ibadan",
+        "img": "https://example.com/images/paystack.png"
+      },
+
+      {
+        "name": "First Bank",
+        "phone": "+234 807 888 8888",
+        "email": "info@firstbank.com",
+        "address": "40, Dogbe, Ibadan",
+        "img": "https://example.com/images/shoprite.png"
       }
     ]
   }
