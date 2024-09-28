@@ -1,27 +1,20 @@
 {
     "members": [
-    
-      {
-        "name": "Mokola IT Solutions",
-        "phone": "+234 800 456 7890",
-        "email": "sales@mokolasolutions.com",
-        "address": "87, Mokola Hill, Ibadan",
-        "img": "https://example.com/images/mokola_it.png"
-      },
+  
       {
         "name": "Bodija Retail Market",
         "phone": "+234 800 567 8901",
         "email": "info@bodijamarket.com",
         "address": "120, Bodija Market, Ibadan",
-        "img": "https://example.com/images/bodija_market.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/bodija.webp"
       },
       
       {
         "name": "Top Success Accessory",
         "phone": "+234 807 488 8888",
         "email": "contact@topsuccessaccessory.com",
-        "address": "15, Nigeria Avenue, Ibadan",
-        "img": "https://example.com/images/top_success_accessory.png"
+        "address": "15, Dogbe, Ibadan",
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/top-success.webp"
       },
 
       {
@@ -29,7 +22,7 @@
         "phone": "+234 807 666 6666",
         "email": "info@kennysspa.com",
         "address": "20, Dugbe Avenue, Ibadan",
-        ",img": "https://example.com/images/kennys_spa.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/access-bank.webp"
       },
 
       {
@@ -37,7 +30,7 @@
         "phone": "+234 807 777 7777",
         "email": "contact@amarafashion.com",
         "address": "25, Challenge, Ibadan",
-        "img": "https://example.com/images/amarafashion.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/Shoprite.webp"
       },
 
       {
@@ -45,7 +38,7 @@
         "phone": "+234 807 888 8888",
         "email": "info@fidelitybank.com",
         "address": "30, Challenge, Ibadan",
-        "img": "https://example.com/images/fidelity_bank.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/fidelity-bank.webp"
       },
 
       {
@@ -53,7 +46,7 @@
         "phone": "+234 807 999 9999",
         "email": "contact@shoprite.com",
         "address": "35, Mobile, Ibadan",
-        "img": "https://example.com/images/paystack.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/Shoprite.webp"
       },
 
       {
@@ -61,7 +54,7 @@
         "phone": "+234 807 888 8888",
         "email": "info@firstbank.com",
         "address": "40, Dogbe, Ibadan",
-        "img": "https://example.com/images/shoprite.png"
+        "img": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/chamber/images/first-bank.webp"
       }
     ]
   }
