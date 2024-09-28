@@ -1,4 +1,4 @@
-const url = "https://adiquatech.github.io/wdd231/chamber/data/members.json";
+const url = "https://adiquatech.github.io/wdd231/chamber/data/company.json";
 const cards = document.getElementById("cards");
 
 async function getMemberData() {
