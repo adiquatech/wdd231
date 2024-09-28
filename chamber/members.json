@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Tech Innovators Inc.",
+      "address": "1234 Silicon Way, San Francisco, CA 94105",
+      "phone": "+1-800-123-4567",
+      "website": "https://www.techinnovators.com",
+      "image": "tech_innovators_logo.png",
+      "membershipLevel": 3,
+      "industry": "Technology",
+      "established": 2005,
+      "services": ["Software Development", "Cloud Solutions", "AI Integration"]
+    },
+    {
+      "name": "Green Thumb Landscapes",
+      "address": "456 Garden Ave, Portland, OR 97204",
+      "phone": "+1-503-555-7890",
+      "website": "https://www.greenthumblandscapes.com",
+      "image": "green_thumb_logo.png",
+      "membershipLevel": 2,
+      "industry": "Landscaping",
+      "established": 2010,
+      "services": ["Residential Landscaping", "Commercial Landscaping", "Gardening"]
+    },
+    {
+      "name": "Future Finance Group",
+      "address": "789 Wall St, New York, NY 10005",
+      "phone": "+1-212-555-1234",
+      "website": "https://www.futurefinance.com",
+      "image": "future_finance_logo.png",
+      "membershipLevel": 1,
+      "industry": "Finance",
+      "established": 1998,
+      "services": ["Investment Planning", "Wealth Management", "Financial Consulting"]
+    },
+    {
+      "name": "Healthy Eats Market",
+      "address": "321 Fresh St, Austin, TX 78701",
+      "phone": "+1-512-555-6789",
+      "website": "https://www.healthyeatsmarket.com",
+      "image": "healthy_eats_logo.png",
+      "membershipLevel": 3,
+      "industry": "Retail",
+      "established": 2015,
+      "services": ["Organic Groceries", "Health Supplements", "Farm-to-Table Products"]
+    },
+    {
+      "name": "QuickFix Auto Repairs",
+      "address": "654 Mechanic Ln, Detroit, MI 48226",
+      "phone": "+1-313-555-9876",
+      "website": "https://www.quickfixauto.com",
+      "image": "quickfix_auto_logo.png",
+      "membershipLevel": 2,
+      "industry": "Automotive",
+      "established": 2002,
+      "services": ["Car Repairs", "Tire Replacement", "Oil Change"]
+    },
+    {
+      "name": "Creative Minds Design Studio",
+      "address": "987 Arts Blvd, Los Angeles, CA 90013",
+      "phone": "+1-213-555-4321",
+      "website": "https://www.creativemindsdesign.com",
+      "image": "creative_minds_logo.png",
+      "membershipLevel": 1,
+      "industry": "Design",
+      "established": 2012,
+      "services": ["Graphic Design", "Web Design", "Brand Consulting"]
+    },
+    {
+      "name": "Bright Horizons Education",
+      "address": "258 Learning Rd, Chicago, IL 60616",
+      "phone": "+1-312-555-2468",
+      "website": "https://www.brighthorizonsedu.com",
+      "image": "bright_horizons_logo.png",
+      "membershipLevel": 3,
+      "industry": "Education",
+      "established": 2008,
+      "services": ["Online Courses", "Tutoring", "Professional Certifications"]
+    }
+  ]
+  

@@ -12,6 +12,7 @@ function toggleMenu() {
     navLinks.classList.toggle("active");
   }
   
+  
 // Course Array
 const courses = [
   {

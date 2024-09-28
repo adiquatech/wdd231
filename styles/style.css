@@ -18,6 +18,7 @@ body {
 }
 .name{
     color: black;
+    font-weight: bold;
     font-size: 24px;
     margin: 0px;
     padding: 10px;
@@ -44,6 +45,10 @@ body {
 }
 .navbar-links li{
     list-style-type: none;
+}
+.navbar-links.active{
+    color: hsl(195, 53%, 79%);
+    font-weight: bold;
 }
 .hamburger {
     display: none;
@@ -181,6 +186,8 @@ footer{
       }
       .navbar-links.active {
         display: flex;
+        color: hsl(0, 0%, 85%);
+        font-weight: bold;
       }
       .navbar-links a {
         display: block;

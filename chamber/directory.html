@@ -15,8 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
@@ -24,23 +24,32 @@
         <section class="autor">
             <img src="images/profile_pic.webp" class="profile-pic" alt="Profile picture of Quadri K. Adisa">
             <h1 class="name">Quadri K. Adisa</h1>
+            <p>Chambr of Commerce</p>
             <button id="hamburger">&#9776;</button>
-
         </section>
-        <div class="navbar">
-            <nav>
-                <ul class="navbar-links" id="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="chamber.html">Chamber</a></li>
-                    <li><a href="GitHub.html">GitHub Profile</a></li>
-                    <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/" target="_blank">LinkedIn</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
+    <div class="navbar">
+        <nav id="navigation">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="https://www.linkedin.com/in/quadri-kolawole-adisa-5b5a3528b/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        
+        <main class="maindirectory">
+            <h2>Chamber Members</h2>
+                <div>
+                    <p>Layout:
+                        <button id="grid">🔲Grid</button>
+                        <button id="list">📃List</button>
+                    </p>
+                </div>
+            <article id="cards">
+            </article>
     </main>
 
     <footer>
