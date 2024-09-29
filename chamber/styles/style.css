@@ -80,7 +80,6 @@ footer p {
     border-radius: 10px;
     text-align: center;
     flex: 1;
-    max-width: 200px;
 }
 .navLinks a {
     text-decoration: none;
@@ -88,7 +87,6 @@ footer p {
     padding: 0.5rem 1rem;
     display: block;
     border-radius: 4px;
-    transition: background-color 0.3;
 }
 .navLinks li:hover{
     background-color: hsl(41, 88%, 57%);
@@ -249,18 +247,25 @@ footer p {
         transition:  0.3s ease-in-out;
         overflow: hidden;
         width: 100%;
+        transition: 0.9s ease-in-out;
+
     }
     .navLinks a{
         display: block;
+        transition: 0.9s ease-in-out;
     }
     .navLinks li{
         cursor: pointer;
         margin: 10px;
         gap: 20px;
+        transition: 0.9s ease-in-out;
+
     }
     .navLinks.open {
         max-height: 300px;
         display: flex;
+        transition: 0.9s ease-in-out;
+
     }
     .navLinks li.current-menu-item a {
         background-color: hsl(41, 88%, 57%);
