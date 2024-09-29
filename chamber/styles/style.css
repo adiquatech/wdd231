@@ -54,14 +54,6 @@ footer p {
 }
 #hamburger {
     display: none;
-    font-size: 2rem;
-    background: none;
-    color: hsl(0, 0%, 100%);
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
 }
 .navbar {
     background-color: hsl(0, 0%, 27%);
@@ -241,30 +233,26 @@ footer p {
         align-items: center;
     }
     .navLinks {
-        display: none;
+        max-height: 0;
         flex-direction: column;
         text-align: center;
-        transition:  0.3s ease-in-out;
+        transition:  max-height 0.5s ease-in-out;
         overflow: hidden;
         width: 100%;
-        transition: 0.9s ease-in-out;
-
     }
-    .navLinks a{
-        display: block;
-        transition: 0.9s ease-in-out;
+    .navLinks.open {
+        max-height: 300px;
+        display: flex;
     }
     .navLinks li{
         cursor: pointer;
         margin: 10px;
         gap: 20px;
-        transition: 0.9s ease-in-out;
 
     }
     .navLinks.open {
         max-height: 300px;
-        display: flex;
-        transition: 0.9s ease-in-out;
+        display: block;
 
     }
     .navLinks li.current-menu-item a {
@@ -275,6 +263,14 @@ footer p {
         display: block;
         padding: 10px;
         gap: 20px;
+        font-size: 2rem;
+        background: none;
+        color: hsl(0, 0%, 100%);
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     
     #cards {
