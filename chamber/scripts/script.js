@@ -77,7 +77,6 @@ const displayMembers = (members) => {
         image = new Image();
         image.src = member.img;
         image.alt = `The brand icon of ${member.name}`;
-        image.loading = "lazy";
 
         image.onload = function () {
             const width = this.naturalWidth;

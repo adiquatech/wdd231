@@ -1,12 +1,12 @@
-
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
-    src: url('fonts/Roboto-Regular.woff2') format('woff2'), /* Adjust the paths as necessary */
+    font-display: swap; /* Ensures text is visible with fallback font */
+    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
          url('fonts/Roboto-Regular.woff') format('woff');
-     }
+}
+
   
 /* Reset some default styles */
 * {
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
     line-height: 1.6;
     background-color: hsl(0, 0%, 96%);
     color: hsl(0, 0%, 20%);
@@ -32,12 +32,14 @@ header {
     position: relative;
 }
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     background-color: hsl(0, 0%, 10%);
     color: hsl(0, 0%, 100%);
     text-align: center;
-    padding: 1rem;
-    min-height: 80px;
-    position: relative;
+    min-height: 100px;
 }
 footer p {
     margin: 0.5rem 0;
@@ -51,7 +53,7 @@ footer p {
 }
 .profile-pic {
     width: 50px;
-    height: 50px;
+    height: 47px;
     border-radius: 10%;
     margin-right: 10px;
 }
