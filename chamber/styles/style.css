@@ -60,6 +60,7 @@ footer p {
     padding: 10px;
 }
 .navLinks {
+    overflow: hidden;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -136,22 +137,34 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 /* List view */
 .list #cards {
     display: block;
 }
-
 .list #cards section {
     display: flex;
     flex-direction: row;
+    align-items: first baseline;
+    padding: 15px;
+    gap: 20px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 8px;
     margin-bottom: 20px;
+    background-color: hsl(0, 0%, 95%);
 }
-
 .list #cards section img {
+    display: none;
     max-width: 100px;
+    height: auto;
     margin-right: 20px;
 }
+list #cards section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
 
 
 
@@ -163,7 +176,6 @@ footer p {
     gap: 20px;
     padding: 20px;
 }
-/* Card styles */
 #cards section {
     background-color: hsl(0, 0%, 95%);
     border-radius: 8px;
@@ -179,42 +191,34 @@ footer p {
 #cards section:hover {
     transform: scale(1.05);
 }
-
-/* Card image styling */
 #cards section img {
     width: 100%;
     height: auto;
     max-width: 150px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 10%;
     margin-bottom: 15px;
 }
-
-/* Card name styling */
 #cards section h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: hsl(0, 0%, 20%);
 }
-
-/* Info text */
 #cards section div {
     font-size: 0.9rem;
     color: hsl(0, 0%, 20%);
     line-height: 1.5;
 }
-
-/* List layout styling */
 .list #cards section {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     text-align: right;
 }
-
 .list #cards section img {
     margin-right: 15px;
 }
-
 .list #cards section h3 {
     font-size: 1.25rem;
     margin-bottom: 0;
@@ -222,7 +226,14 @@ footer p {
 
 
 
-
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  }
+  
 
 
 
@@ -248,12 +259,10 @@ footer p {
         cursor: pointer;
         margin: 10px;
         gap: 20px;
-
     }
     .navLinks.open {
         max-height: 300px;
         display: block;
-
     }
     .navLinks li.current-menu-item a {
         background-color: hsl(41, 88%, 57%);
@@ -272,7 +281,6 @@ footer p {
         top: 20px;
         right: 20px;
     }
-    
     #cards {
         display: block;
         gap: 20px;
@@ -282,3 +290,4 @@ footer p {
         width: 100%;
     }
 }
+

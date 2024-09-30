@@ -20,21 +20,19 @@
     const gridButton = document.querySelector("#gridView");
     const listButton = document.querySelector("#listView");
     const cards = document.getElementById("cards");
-
-    console.log(gridButton); // Should log the grid button
-    console.log(listButton); // Should log the list button
-    console.log(cards);      // Should log the cards container
   
-    listButton?.addEventListener("click", () => {
-      cards.classList.add("list");
-      cards.classList.remove("grid");
-    });
+    if (gridButton &&listButton) {
+      listButton.addEventListener("click", () => {
+      cards.parentElement.classList.add("list");
+      cards.parentElement.classList.remove("grid");
+      });
   
-    gridButton?.addEventListener("click", () => {
-      cards.classList.remove("list");
-      cards.classList.add("grid");
-    });
-  });
+      gridButton.addEventListener("click", () => {
+      cards.parentElement.classList.add("grid");
+      cards.parentElement.classList.remove("list");
+      });
+    }
+});
   
 
 // Active page
@@ -67,27 +65,34 @@ async function getMemberData() {
 }
 
 getMemberData();
-
 const displayMembers = (members) => {
     members.forEach(member => {
         const card = document.createElement("section");
         const name = document.createElement("h3");
-        const image = document.createElement("img");
         const info = document.createElement("div");
 
         info.textContent = `${member.phone} || ${member.email} || ${member.address}`;
-        name.textContent = member.name;
+        name.textContent = `${member.name}  `;
 
-        image.setAttribute("src", member.img);
-        image.setAttribute("alt", `The brand icon of ${member.name}`);
-        image.setAttribute("loading", "lazy");
-        image.setAttribute("width", "200");
-        image.setAttribute("height", "auto");
+        image = new Image();
+        image.src = member.img;
+        image.alt = `The brand icon of ${member.name}`;
+        image.loading = "lazy";
+
+        image.onload = function () {
+            const width = this.naturalWidth;
+            const height = this.naturalHeight;
+            image.setAttribute("width", width);
+            image.setAttribute("height", height);
+        };
 
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(info);
         cards?.appendChild(card);
+
+        
+
     });
 };
 
