@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+}
+#section{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px;
+}
+#event{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 85%);
+    flex-grow: 1;
+    margin-right: 20px;
+    border: 2px;
+    border-radius: 5px;
+}
+#current-weather{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: hsl(0, 0%, 50%);
+    border: 2px;
+    border-radius: 5px;
+}
+#weather-forecast{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 75%);
+    border: 2px;
+    border-radius: 5px;
+}
+#event h2, #current-weather h2, #weather-forecast h2{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+}
+
+ 
+
+/* General Footer Styles */
+footer {
+    background-color: hsl(0, 0%, 80%);
+    padding: 20px;
+    margin: 10px;
+    color: hsl(0, 0%, 0%);
+}
+.footer-container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+.address{
+    align-items: start;
+    text-align: start;
+    justify-content: left;
+}
+.address-name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.social-media a{
+    padding: 10px;
+    margin: 10px ;
+}
+.developer p{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.copyrightIcon {
+    margin: 0px;
+}
+
+
+
+/* Responsive Footer: For screens 768px or smaller */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .socia-media img {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #forecast .day {
+        width: 100%;
+    }
+}

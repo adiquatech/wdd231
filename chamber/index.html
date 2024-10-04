@@ -17,42 +17,92 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
         <section class="autor">
             <img src="images/profile_pic.webp" class="profile-pic" alt="Profile picture of Quadri K. Adisa">
-            <h1 class="name">Quadri K. Adisa</h1>
+            <h1 class="name">Adiquatech</h1>
             <p>Chambr of Commerce</p>
             <button id="hamburger">&#9776;</button>
         </section>
     </header>
-        <div class="navbar">
-            <nav id="navigation">
-                <ul class="navLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html">Directory</a></li>
-                    <li><a href="join.html">Join</a></li>
-                    <li><a href="page-four.html">Home Page</a></li>
+    <div class="navbar">
+        <nav id="navigation">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="Discover.html">Discover</a></li>
 
-                </ul>
-            </nav>
-        </div>
-    
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        <h1>Home page</h1>
+        <section id="section">
+            <div id="event">
+                <h2>Event</h2>
+                <p></p>
+            </div>
+
+            <div id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather">
+                    <img id="icon" src="" alt="">
+                    <p id="city"></p>
+                    <p id="country"></p>
+                    <p id="temperature"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                    <p id="pressure"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
+            </div>
+
+            <div id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                    <div class="day">
+                        <h3></h3>
+                        <img src="" alt="">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p class="copyright">
-            <span class="copyrightIcon">&#169;</span>
-            <span class="currentyear"></span> -
-            <span class="authorName">Quadri K. Adisa</span> -
-            <span class="country">Nigeria</span>
-        </p>
-        <p class="lastModified"></p>
+        <div class="footer-container">
+            <div class="address">
+                <p class="address-name">Quadri.k Chamber of Commerce</p>
+                <p>No. 2 ifesowapo Street</p>
+                <p>Ibadan, Oyo State, Nigeria</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="images/icons/youtube.png" alt="Youtube" width="30" height="30"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="images/icons/linkedin.png" alt="Instagram" width="30" height="30"></a>
+            </div>
+            <div class="developer">
+                <p>WDD231 Class Project</p>
+                <p>Quadri Kolawole</p>
+                <p class="copyright">
+                    <span class="copyrightIcon">&#169;</span>
+                    <span class="currentyear"></span> 
+                    <span class="authorName">Adiquatech</span> 
+                    <span class="Website">Chamber of Commerce</span>
+                </p>
+                <p class="lastModified"></p>
+            </div>
+        </div>
     </footer>
+    
 </body>
 </html>

@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // Company Members
-  const url = "https://adiquatech.github.io/wdd231/chamber/data/company.json";
+const url = "https://adiquatech.github.io/wdd231/chamber/data/company.json";
 const cards = document.getElementById("cards");
 
 async function getMemberData() {
@@ -70,6 +70,7 @@ const displayMembers = (members) => {
         const card = document.createElement("section");
         const name = document.createElement("h3");
         const info = document.createElement("div");
+        const line = document.createElement("hr");
 
         info.textContent = `${member.phone} || ${member.email} || ${member.address}`;
         name.textContent = `${member.name}  `;
@@ -86,6 +87,7 @@ const displayMembers = (members) => {
         };
 
         card.appendChild(name);
+        card.appendChild(line);
         card.appendChild(image);
         card.appendChild(info);
         cards?.appendChild(card);

@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.name {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+button#hamburger {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 14px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a.active, 
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* For mobile view */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button#hamburger {
+        display: block; /* Show hamburger in mobile view */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        display: none; /* Initially hidden */
+    }
+
+    .navbar ul li {
+        text-align: left;
+        padding: 10px 0;
+    }
+
+    /* When the menu is toggled */
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* For tablet and larger screens */
+    .navbar ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
