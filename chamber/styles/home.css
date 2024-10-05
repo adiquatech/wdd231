@@ -22,16 +22,37 @@
     justify-content: center;
     flex-direction: column;
     margin-right: 20px;
-    background-color: hsl(0, 0%, 50%);
+    background-color: hsl(41, 88%, 57%);
+    color: hsl(0, 0%, 0%);
     border: 2px;
     border-radius: 5px;
 }
+#weather {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    text-transform: capitalize;
+}
+#weatherIcon {
+    max-width: 300px;
+    height: auto;
+}
+#weatherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space out the paragraphs evenly */
+    margin-left: 20px; /* Add some space between image and text */
+}
+
+#weatherInfo p {
+    margin: 1px 0; /* Optional: Adjust spacing between text */
+}
+
 #weather-forecast{
     display: flex;
     flex-grow: 1;
-    justify-content: center;
     flex-direction: column;
-    background-color: hsl(0, 0%, 75%);
+    background-color: hsl(0, 0%, 85%);
     border: 2px;
     border-radius: 5px;
 }
