@@ -107,6 +107,35 @@ footer {
 
 
 
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query for tablet */
+@media (max-width: 1024px) {
+    .hero-image {
+        content: url('images/place-tablet.webp');
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+    
+}
+
+
+
+
 /* Responsive Footer: For screens 768px or smaller */
 @media screen and (max-width: 768px) {
     .footer-container {
@@ -129,5 +158,9 @@ footer {
 
     #forecast .day {
         width: 100%;
+    }
+
+    .hero-image {
+        content: url('images/place-mobile.webp');
     }
 }
