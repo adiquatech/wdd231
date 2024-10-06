@@ -24,23 +24,54 @@
       members.forEach(member => {
           const card = document.createElement("section");
           const name = document.createElement("h3");
-          const info = document.createElement("div");
+          name.textContent = `${member.name}`;
           const line = document.createElement("hr");
-  
-          info.textContent = `${member.phone} || ${member.email} || ${member.address}`;
-          name.textContent = `${member.name}  `;
+
+          const info = document.createElement("div");
+          info.classList.add("info");
   
           image = new Image();
           image.src = member.img;
           image.alt = `The brand icon of ${member.name}`;
-  
           image.onload = function () {
               const width = this.naturalWidth;
               const height = this.naturalHeight;
               image.setAttribute("width", width);
               image.setAttribute("height", height);
           };
-  
+
+        const information = document.createElement("div");
+        information.classList.add("information");
+        
+        const memberPhone = document.createElement("div");
+        const memberPhoneLabel = document.createElement("span");
+        memberPhoneLabel.textContent = "Phone: ";
+        memberPhoneLabel.style.fontWeight = "bold";
+        memberPhone.appendChild(memberPhoneLabel);
+        memberPhone.appendChild(document.createTextNode(member.phone));
+
+        const memberEmail = document.createElement("div");
+        const memberEmailLabel = document.createElement("span");
+        memberEmailLabel.textContent = "Email: ";
+        memberEmailLabel.style.fontWeight = "bold";
+        memberEmail.appendChild(memberEmailLabel);
+        memberEmail.appendChild(document.createTextNode(member.email));
+
+        const memberAddress = document.createElement("div");
+        const memberAddressLabel = document.createElement("span");
+        memberAddressLabel.textContent = "Address: ";
+        memberAddressLabel.style.fontWeight = "bold";
+        memberAddress.appendChild(memberAddressLabel);
+        memberAddress.appendChild(document.createTextNode(member.address));
+
+        information.appendChild(memberPhone);
+        information.appendChild(memberEmail);
+        information.appendChild(memberAddress);
+
+        info.appendChild(image);
+        info.appendChild(information);
+
+
           card.appendChild(name);
           card.appendChild(line);
           card.appendChild(image);
