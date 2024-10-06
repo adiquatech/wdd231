@@ -31,19 +31,6 @@ header {
     align-items: center;
     position: relative;
 }
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: hsl(0, 0%, 10%);
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    min-height: 100px;
-}
-footer p {
-    margin: 0.5rem 0;
-}
 .autor {
     margin: 10px;
     display: flex;
@@ -233,6 +220,46 @@ list #cards section h3 {
 }
 
 
+/* General Footer Styles */
+footer {
+    background-color: hsl(0, 0%, 80%);
+    padding: 20px;
+    margin: 10px;
+    color: hsl(0, 0%, 0%);
+}
+.footer-container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 0; 
+}
+.address{
+    align-items: start;
+    text-align: start;
+    justify-content: left;
+}
+.address-name{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.social-media a{
+    padding: 10px;
+    margin: 10px ;
+}
+.developer p{
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+.copyrightIcon {
+    margin: 0px;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -285,6 +312,13 @@ list #cards section h3 {
     #cards section{
         margin-bottom: 20px;
         width: 100%;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
     }
 }
 
