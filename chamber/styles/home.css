@@ -156,7 +156,7 @@ footer {
 /* Media query for tablet */
 @media (max-width: 1024px) {
     .hero-image {
-        content: url('images/place-tablet.webp');
+        content: url("../images/place-tablet.webp");
     }
     .hero-content {
         top: 40%;
@@ -169,10 +169,10 @@ footer {
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
     .hero-image {
-        content: url("images/place-mobile.webp");
+        content: url(../images/place-mobile.webp);
     }
     .hero-content {
-        top: 10%;
+        top: 35%;
     }
     .cta-button {
         padding: 10px 20px;
