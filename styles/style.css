@@ -10,21 +10,21 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: hsl(10, 50%, 66%);
+    background-color: hsl(0, 0%, 20%);
 }
 .profile-pic{
     width: 50px;
     height: 50px;
 }
 .name{
-    color: black;
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
     font-size: 24px;
     margin: 0px;
     padding: 10px;
 }
 .navbar {
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 30%);
     overflow: hidden;
     text-align: center;
   }
@@ -61,10 +61,10 @@ body {
     display: flex;
   }
 footer{
-    background-color: hsl(10, 100%, 80%);
+    background-color: hsl(0, 0%, 20%);
     padding: 20px;
     text-align: center;
-    color: black;
+    color: hsl(0, 0%, 100%);
 }
 
 /* HomePage css property */
@@ -138,10 +138,10 @@ footer{
     font-size: 1em;
 }
 .completed {
-    background-color: lightgreen;
+    background-color: hsl(120, 73%, 50%);
 }
 .incomplete {
-    background-color: lightcoral;
+    background-color: hsl(9, 100%, 64%);
 }
 .course-card {
     padding: 10px;
