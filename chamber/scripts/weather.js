@@ -11,13 +11,14 @@ const sunrise = document.querySelector("#sunrise");
 const sunset = document.querySelector("#sunset");
 const forecastContainer = document.querySelector("#forecast");
 
-// api variables
+//    api variables
 const key = "da3fbbafa71ee39f7376397f62170a04"
 const lat = "7.37599198723924"
 const long = "3.9373109397276584"
-const cnt = "3"
-const weatherUrl = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`
-const forecastUrl = `//api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${long}&cnt=${cnt}&appid=${key}`
+const cnt = "24"
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&cnt=${cnt}&appid=${key}&units=metric`;
+
 
 async function apiFetch() {
     try {
@@ -44,7 +45,7 @@ async function apiFetch() {
     }
   }
 
-//   Display weather
+//    Display weather
 function displayWeather(data) {
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute("alt", "weatherIcon")
@@ -58,20 +59,23 @@ function displayWeather(data) {
     sunset.innerHTML = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`;
 }
 
-// Display forecast
+//    Display forecast
 function displayForecast(data) {
-  for (let i = 0; i < 3; i++) {
-      const date = new Date(data.list[i].dt * 1000);
-      const dayName = i === 0 ? 'Today' : date.toLocaleDateString(undefined, { weekday: 'long' });
+    const forecastList = data.list.filter((item, index) => index % 8 === 0).slice(0, 3);
 
-      if (i === 0) {
-          today.innerHTML = `Today: ${Math.round(data.list[i].temp.day)}°C`;
-      } else if (i === 1) {
-          day1.innerHTML = `${dayName}: ${Math.round(data.list[i].temp.day)}°C`;
-      } else if (i === 2) {
-          day2.innerHTML = `${dayName}: ${Math.round(data.list[i].temp.day)}°C`;
-      }
-  }
+    forecastList.forEach((forecast, i) => {
+        const date = new Date(forecast.dt * 1000);
+        const dayName = i === 0 ? 'Today' : date.toLocaleDateString(undefined, { weekday: 'long' });
+        const temperature = Math.round(forecast.main.temp);
+        
+        if (i === 0) {
+            document.querySelector("#today").innerHTML = `Today: ${temperature}°C`;
+        } else if (i === 1) {
+            document.querySelector("#day1").innerHTML = `${dayName}: ${temperature}°C`;
+        } else if (i === 2) {
+            document.querySelector("#day2").innerHTML = `${dayName}: ${temperature}°C`;
+        }
+    });
 }
 
 

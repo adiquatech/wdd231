@@ -1,6 +1,53 @@
 * {
     margin: 0px;
 }
+
+
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: hsl(41, 88%, 47%);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: hsl(41, 88%, 57%);
+}
+
+
+
+/* Services section styles */
 #section{
     display: flex;
     justify-content: space-between;
@@ -40,19 +87,17 @@
 #weatherInfo {
     display: flex;
     flex-direction: column;
-    justify-content: space-around; /* Space out the paragraphs evenly */
-    margin-left: 20px; /* Add some space between image and text */
+    justify-content: space-around;
+    margin-left: 20px;
 }
-
 #weatherInfo p {
-    margin: 1px 0; /* Optional: Adjust spacing between text */
+    margin: 1px 0;
 }
-
 #weather-forecast{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    background-color: hsl(0, 0%, 85%);
+    background-color: hsl(41, 88%, 57%);
     border: 2px;
     border-radius: 5px;
 }
@@ -108,45 +153,32 @@ footer {
 
 
 
-/* Hero section styles */
-.hero {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* Media query for tablet */
 @media (max-width: 1024px) {
     .hero-image {
         content: url('images/place-tablet.webp');
     }
+    .hero-content {
+        top: 40%;
+    }
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
 }
-
 /* Media query for mobile */
-@media (max-width: 768px) {
-    
-}
-
-
-
-
-/* Responsive Footer: For screens 768px or smaller */
 @media screen and (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
+    .hero-image {
+        content: url("images/place-mobile.webp");
     }
-
-    .footer-section {
-        margin-bottom: 20px;
+    .hero-content {
+        top: 10%;
+        height: 300px;
     }
-
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
     .socia-media img {
         display: inline-block;
         margin: 0 10px;
@@ -155,12 +187,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-
     #forecast .day {
         width: 100%;
     }
-
-    .hero-image {
-        content: url('images/place-mobile.webp');
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
     }
 }
