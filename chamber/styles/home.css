@@ -21,7 +21,7 @@
 }
 .hero-image {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .hero-content {
     position: absolute;
@@ -176,7 +176,7 @@
 /* Media query for tablet */
 @media (max-width: 1024px) {
     .hero-image {
-        content: url("../images/place-tablet.webp");
+        content: url("../images/place-desktop.webp");
     }
     .hero-content {
         top: 40%;
