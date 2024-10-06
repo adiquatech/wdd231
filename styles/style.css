@@ -183,6 +183,7 @@ footer{
         text-align: center;
         justify-content: center;
         align-items: center;
+        transition: 0.5s ease-in-out;
       }
       .navbar-links.active {
         display: flex;

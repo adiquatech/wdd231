@@ -65,7 +65,7 @@
 }
 #current-weather{
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0.5;
     justify-content: center;
     flex-direction: column;
     margin-right: 20px;
@@ -95,11 +95,18 @@
 }
 #weather-forecast{
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0.5;
     flex-direction: column;
     background-color: hsl(41, 88%, 57%);
+    color: hsl(0, 0%, 0%);
     border: 2px;
     border-radius: 5px;
+}
+#forecast{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    text-transform: capitalize;
 }
 #event h2, #current-weather h2, #weather-forecast h2{
     margin: 0px;
@@ -112,8 +119,54 @@
  
 
 
+/* #membership-container */
+#membership-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: hsl(0, 0%, 98%);
+}
+#membership-container section {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 87%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+#membership-container h3 {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 10%);
+    margin-bottom: 10px;
+}
+#membership-container hr {
+    border: 0;
+    border-top: 1px solid hsl(0, 0%, 70%);
+    margin: 10px 0;
+}
 
-
+/* Flexbox for image and details */
+#membership-container .details-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+#membership-container img {
+    border-radius: 10%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+#membership-container .details {
+    flex: 1;
+    font-size: 0.9em;
+    color: hsl(0, 0%, 0%);
+}
 
 
 /* Media query for tablet */
@@ -128,6 +181,15 @@
         padding: 12px 24px;
         font-size: 16px;
     }
+    #membership-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    #membership-container section {
+        margin: 0;
+        width: auto;
+    }
 }
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
@@ -141,16 +203,28 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+    #section {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    #event {
+        width: 100%;
+    }
+    #current-weather {
+        width: 100%;
+    }
     .socia-media img {
         display: inline-block;
         margin: 0 10px;
     }
     #forecast {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        padding: 10px;
     }
-    #forecast .day {
+    #forecast p {
+        margin-bottom: 10px;
         width: 100%;
     }
-    
 }

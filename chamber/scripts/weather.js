@@ -69,11 +69,11 @@ function displayForecast(data) {
         const temperature = Math.round(forecast.main.temp);
         
         if (i === 0) {
-            document.querySelector("#today").innerHTML = `Today: ${temperature}°C`;
+            document.querySelector("#today").innerHTML = `Today: <strong>${temperature}°C</strong>`;
         } else if (i === 1) {
-            document.querySelector("#day1").innerHTML = `${dayName}: ${temperature}°C`;
+            document.querySelector("#day1").innerHTML = `${dayName}: <strong>${temperature}°C</strong>`;
         } else if (i === 2) {
-            document.querySelector("#day2").innerHTML = `${dayName}: ${temperature}°C`;
+            document.querySelector("#day2").innerHTML = `${dayName}: <strong>${temperature}°C</strong>`;
         }
     });
 }

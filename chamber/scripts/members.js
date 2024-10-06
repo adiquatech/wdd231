@@ -12,7 +12,7 @@
           if (!response.ok) throw new Error('Network response was not ok');
           const data = await response.json();
           displayMembers(data.members);
-          displayRandomMemberships(data.members); // Display random Gold and Silver memberships
+          displayRandomMemberships(data.members);
       } catch (error) {
           console.error('There has been a problem with your fetch operation:', error);
       }
@@ -54,33 +54,34 @@
 function filterGoldSilver(members) {
     return members.filter(member => member.membership === "Gold" || member.membership === "Silver");
 }
-
 // Function to shuffle
 function getRandomMemberships(members) {
     const filteredMembers = filterGoldSilver(members);
     const shuffled = filteredMembers.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 3);
 }
-
 // Function to display memberships
 function displayRandomMemberships(members) {
     const randomMemberships = getRandomMemberships(members);
     const cards = document.querySelector("#membership-container");
-    membershipContainer.innerHTML = "";
+    // cards.innerHTML = "";
 
     randomMemberships.forEach(member => {
         const card = document.createElement("section");
-        const name = document.createElement("h3");
-        const info = document.createElement("div");
-        const line = document.createElement("hr");
-        const image = new Image();
-
-        name.textContent = `${member.name}`;
-        info.textContent = `${member.phone} || ${member.email} || ${member.address}`;
         
+        // Create name heading element
+        const name = document.createElement("h3");
+        name.textContent = `${member.name}`;
+        const line = document.createElement("hr");
+
+        // Create a container for image and details
+        const detailsContainer = document.createElement("div");
+        detailsContainer.classList.add("details-container");
+
+        // Create image element
+        const image = new Image();
         image.src = member.img;
         image.alt = `The brand icon of ${member.name}`;
-
         image.onload = function () {
             const width = this.naturalWidth;
             const height = this.naturalHeight;
@@ -88,13 +89,54 @@ function displayRandomMemberships(members) {
             image.setAttribute("height", height);
         };
 
-        // Append the elements to the card
+        // Create a div for the member details
+        const details = document.createElement("div");
+        details.classList.add("details");
+
+        // const phone = document.createElement("div");
+        // phone.textContent = `Phone: ${member.phone}`;
+        // const email = document.createElement("div");
+        // email.textContent = `Email: ${member.email}`;
+        // const address = document.createElement("div");
+        // address.textContent = `Address: ${member.address}`;
+
+        const phone = document.createElement("div");
+        const phoneLabel = document.createElement("span");
+        phoneLabel.textContent = "Phone: ";
+        phoneLabel.style.fontWeight = "bold"; // Make the label bold
+        phone.appendChild(phoneLabel);
+        phone.appendChild(document.createTextNode(member.phone));
+
+        const email = document.createElement("div");
+        const emailLabel = document.createElement("span");
+        emailLabel.textContent = "Email: ";
+        emailLabel.style.fontWeight = "bold"; // Make the label bold
+        email.appendChild(emailLabel);
+        email.appendChild(document.createTextNode(member.email));
+
+        const address = document.createElement("div");
+        const addressLabel = document.createElement("span");
+        addressLabel.textContent = "Address: ";
+        addressLabel.style.fontWeight = "bold"; // Make the label bold
+        address.appendChild(addressLabel);
+        address.appendChild(document.createTextNode(member.address));
+
+
+        details.appendChild(phone);
+        details.appendChild(email);
+        details.appendChild(address);
+
+        // Append image and details to the detailsContainer
+        detailsContainer.appendChild(image);
+        detailsContainer.appendChild(details);
+
+        // Append the name, line, and detailsContainer to the card
         card.appendChild(name);
         card.appendChild(line);
-        card.appendChild(image);
-        card.appendChild(info);
+        card.appendChild(detailsContainer);
 
         // Append the card to the container
         cards.appendChild(card);
     });
-};
+}
+
