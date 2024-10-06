@@ -121,8 +121,9 @@
 
 /* #membership-container */
 #membership-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
     background-color: hsl(0, 0%, 100%);
 }
@@ -166,15 +167,7 @@
     font-size: 0.9em;
     color: hsl(0, 0%, 0%);
 }
-#membership-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-#membership-container section {
-    margin: 0;
-    width: auto;
-}
+
 
 
 /* Media query for tablet */
@@ -226,5 +219,13 @@
     #forecast p {
         margin-bottom: 10px;
         width: 100%;
+    }
+    #membership-container {
+        display: flex;
+        gap: 20px;
+    }
+    #membership-container section {
+        margin: 0;
+        width: auto;
     }
 }
