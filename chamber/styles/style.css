@@ -70,13 +70,13 @@ header {
 }
 .navLinks li {
     margin: 0 10px;
-    background-color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 95%);
     border-radius: 10px;
     text-align: center;
 }
 .navLinks a {
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
     padding: 0.5rem 1rem;
     display: block;
     border-radius: 4px;

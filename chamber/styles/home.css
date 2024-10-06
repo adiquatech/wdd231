@@ -28,14 +28,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: hsl(0, 0%, 100%);
     text-align: center;
 }
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
     background-color: hsl(41, 88%, 47%);
-    color: white;
+    color: hsl(0, 0%, 0%);
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
@@ -190,7 +190,7 @@
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
     .hero-image {
-        content: url(../images/place-mobile.webp);
+        content: url("../images/place-mobile.webp");
     }
     .hero-content {
         top: 35%;
