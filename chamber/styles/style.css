@@ -213,10 +213,13 @@ header {
     height: auto;
     margin-right: 20px;
 }
-list #cards section h3 {
+.list #cards section h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
     text-align: start;
+}
+hr{
+    color: red;
 }
 
 

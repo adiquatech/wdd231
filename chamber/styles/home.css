@@ -229,7 +229,7 @@
         width: 100%;
     }
     #membership-container section {
-        margin: 0;
+        margin: 20px;
         width: auto;
     }
 }
