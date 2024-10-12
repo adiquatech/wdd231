@@ -124,13 +124,6 @@ function displayRandomMemberships(members) {
         const details = document.createElement("div");
         details.classList.add("details");
 
-        // const phone = document.createElement("div");
-        // phone.textContent = `Phone: ${member.phone}`;
-        // const email = document.createElement("div");
-        // email.textContent = `Email: ${member.email}`;
-        // const address = document.createElement("div");
-        // address.textContent = `Address: ${member.address}`;
-
         const phone = document.createElement("div");
         const phoneLabel = document.createElement("span");
         phoneLabel.textContent = "Phone: ";

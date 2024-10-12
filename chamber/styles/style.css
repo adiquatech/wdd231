@@ -319,8 +319,7 @@ footer {
         flex-direction: column;
         text-align: center;
     }
-    .footer-section {
-        margin-bottom: 20px;
+    .address, .social-media, .developer{
+        padding: 10px;
     }
 }
-
