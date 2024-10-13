@@ -1,0 +1,57 @@
+/* General styles for the container */
+main h1{
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 0%);
+}
+#results {
+    max-width: 600px;
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    border: 2px solid hsl(41, 88%, 57%);
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 95%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: hsl(0, 0%, 0%);
+}
+
+/* Style for the title or header */
+#results p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hsl(41, 88%, 0%);
+    background-color: hsl(41, 88%, 57%);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Style for each information block */
+#results p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Styling the links (email and phone) */
+#results a {
+    color: hsl(208, 100%, 50%);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#results a:hover {
+    text-decoration: underline;
+}
+
+/* Specific style for organization description */
+#results p:nth-of-type(6) {
+    font-style: italic;
+    color: hsl(0, 0%, 0%);
+}
+
+/* Additional subtle styling for the date */
+#results p:last-of-type {
+    color: hsl(0, 0%, 0%);
+}

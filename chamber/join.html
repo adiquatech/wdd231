@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD231 - Web Frontend Development I - Quadri Kolawole</title>
-    <meta name="description" content="Directory page">
+    <meta name="description" content="Join page">
     <meta name="author" content="Quadri Kolawole">
-    <meta property="og:title" content="Directory page">
+    <meta property="og:title" content="join page">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Directory page for chamber of commerce ">
+    <meta property="og:description" content="Join page for chamber of commerce ">
     <meta property="og:url" content="https://adiquatech.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content = "https://adiquatech.github.io/wdd231/images/place.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,21 +50,38 @@
                 <h1>Member Application Form</h1>
 
                 <form method="GET" action="thanks.html" class="designOne">
-                    <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-                    <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                    <label>Email <input type="email" name="email" required placeholder="example@gmail.com"  title="Your Email" autocomplete="email"></label>
-                    <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="123-000-1234" ></label>
+                    <label>First Name <input type="text" name="first" 
+                        required autocomplete="given-name" title="Your First Name"></label>
+
+                    <label>Last Name <input type="text" name="last" 
+                        required autocomplete="family-name" title="Your Last Name"></label>
+
+                    <label for="title">Organization title: <input type="text" name="orgTitle" id="title" 
+                        autocomplete="organization-title" pattern="[a-zA-Z\-\s]{7,}"></label>
+
+                    <label>Email <input type="email" name="email" required placeholder="example@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+
+                    <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" 
+                        title="A Phone Number with dashes" placeholder="123-000-1234" ></label>
+
+                <h3>Organization Information</h3>
+                    <label for="orgName">Organization Name: <input type="text" name="orgName" id="orgName"
+                        autocomplete="organization" required></label>
+                    <label for="orgDescription">Organization Description: 
+                        <textarea name="orgDescription"id="orgDescription"></textarea></label>
 
                 <h3>Membership Level</h3>
-                    <label><input type="radio" name="member" value="Baptism" checked> NP Membership</label>
+                    <label><input type="radio" name="member" value="Baptism" > NP Membership</label>
                     <label><input type="radio" name="member" value="Initiatory"> Gold Membership</label>
                     <label><input type="radio" name="member" value="Endowment"> Silver Membership</label>
                     <label><input type="radio" name="member" value="Sealing"> Bronze Membership</label>
 
-                <h3>Date</h3>
-                    <label>Date <input type="date" name="fecha" required></label>
+                <input type="hidden" name="timestamp" id="timestamp">
 
-                <input type="submit" value="Apply For Membership">
+                <div class="submit">
+                    <input type="submit" value="Apply For Membership">
+                </div>
                 </form>
             </div>
 
@@ -76,7 +93,7 @@
                         <h2 id="dialog-title">Sample Title</h2>
                         <button id="close-dialog">X</button>
                       </div>
-                      <p id="dialog-content"></p>- This will display membership details like benefits -->
+                      <p id="dialog-content"></p>
                 </dialog>
             </div>
         </section>
