@@ -35,5 +35,5 @@ showInfo.innerHTML = `
 <p>Phone: <a href = "tel:${value("phone")}">${value("phone")}</a></p>
 <P>Organization: <strong>${value("orgName")}</strong></P>
 <P>Organization Description: <strong>${value("orgDescription")}</strong></P>
-<p>Submission Date: <strong>${timestamp}</strong></p>
+<p>Submission: <strong>${timestamp}</strong></p>
 `;
