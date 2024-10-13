@@ -52,8 +52,11 @@ function getDate() {
   if (dd < 10) { dd = '0' + dd; }
   if (mm < 10) { mm = '0' + mm; }
   if (hh < 10) { hh = '0' + hh; }
+  if (min < 10) {min = '0' + min}
+  if (ss < 10) {ss = '0' + ss}
 
-  var formattedDate = yyyy + "-" + mm + "-" + dd;
+  // var formattedDate = "Date:" + yyyy + "/" + mm + "/" + dd + "-" + hh + "-" + min + "-" + ss;
+  var formattedDate = `Date: ${yyyy}/${mm}/${dd} Time: ${hh}:${min}:${ss}`;
   var timestamp = formattedDate;
 
   document.getElementById("timestamp").value = timestamp;

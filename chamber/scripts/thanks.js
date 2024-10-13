@@ -22,7 +22,7 @@ function value(value){
     return(result)
 }
 
-const timestamp = value("timestamp");
+const timestamp = decodeURIComponent(value("timestamp"));
 console.log(timestamp)
 
 // display result on html
