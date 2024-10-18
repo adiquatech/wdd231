@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #209724;
+  --secondary-color: #07070A;
+  --light-color: #FCF7FF;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+  .wireframe-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.wireframe-content > div {
+    flex: 1 1 45%;
+    margin: 10px;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+#lastModified {
+  font-size: small;
+}
+
+#copyright {
+  font-size: large;
+}
