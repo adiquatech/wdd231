@@ -294,8 +294,8 @@ footer {
     flex-direction: column;
 }
 #city img{
+    align-self: center;
     padding: 10px;
-    align-items: center;
     border-radius: 20px;
 }
 #city h3{
