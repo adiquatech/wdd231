@@ -277,7 +277,8 @@ footer {
 }
 #event, #nationality, #city{
     width: 100%;
-    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
     background-color: hsl(0, 0%, 95%);
 }
 #event p{
@@ -394,14 +395,14 @@ footer {
     #discover-main{
         flex-direction: column;
     }
-    #sidebar, #about-pic {
+    #sidebar, #discover-site {
         width: 100%;
         padding: 0; 
       }
-      #about-pic {
+      /* #about-pic {
         padding-top: 20px;
       }
       #sidebar {
         margin-bottom: 20px;
-      }
+      } */
 }
