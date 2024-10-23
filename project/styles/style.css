@@ -63,7 +63,6 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     cursor: pointer;
 }
 .navLinks li {
@@ -80,7 +79,7 @@ header {
     display: block;
 }
 .navLinks li:hover{
-    background-color: hsl(122, 65%, 30%);
+    background-color: hsl(122, 65%, 40%);
     color: hsl(0, 0%, 0%);
 }
 .navLinks li.current-menu-item  {
@@ -145,18 +144,14 @@ footer {
         overflow: hidden;
         width: 100%;
     }
-    .navLinks.open {
+    .navLinks.open, .navLinks li{
         max-height: 300px;
-        display: flex;
+        display: block;
     }
     .navLinks li{
         cursor: pointer;
         margin: 10px;
         gap: 20px;
-    }
-    .navLinks.open {
-        max-height: 300px;
-        display: block;
     }
     .navLinks li.current-menu-item a {
         background-color: hsl(122, 65%, 30%);
