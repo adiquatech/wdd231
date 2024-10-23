@@ -22,8 +22,8 @@ body {
     margin: 0;
 }
 header {
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
+    background-color: hsl(122, 65%, 30%);
+    color: hsl(0, 0%, 3%);
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
@@ -50,13 +50,12 @@ header {
 .autor p {
     font-size: 0.9rem;
     margin-top: 0.2rem;
-    color: hsl(0, 0%, 90%);
+    color: hsl(0, 0%, 3%);
 }
 #hamburger {
     display: none;
 }
 .navbar {
-    background-color: hsl(0, 0%, 27%);
     padding: 10px;
 }
 .navLinks {
@@ -77,15 +76,15 @@ header {
     text-decoration: none;
     color: hsl(0, 0%, 0%);
     padding: 0.5rem 1rem;
+    border-radius: 10px;
     display: block;
-    border-radius: 4px;
 }
 .navLinks li:hover{
-    background-color: hsl(41, 88%, 57%);
+    background-color: hsl(122, 65%, 30%);
     color: hsl(0, 0%, 0%);
 }
 .navLinks li.current-menu-item  {
-    background-color: hsl(41, 88%, 57%);
+    background-color: hsl(122, 65%, 30%);
     color: hsl(0, 0%, 0%);
 }
 
@@ -94,7 +93,7 @@ header {
 
 /* General Footer Styles */
 footer {
-    background-color: hsl(0, 0%, 80%);
+    background-color: hsl(122, 65%, 65%);
     padding: 20px;
     margin: 10px;
     color: hsl(0, 0%, 0%);
@@ -160,7 +159,7 @@ footer {
         display: block;
     }
     .navLinks li.current-menu-item a {
-        background-color: hsl(41, 88%, 57%);
+        background-color: hsl(122, 65%, 30%);
         color: hsl(0, 0%, 0%);
     }
     #hamburger {
