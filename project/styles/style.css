@@ -46,11 +46,13 @@ header {
 .autor h1 {
     font-size: 1.8rem;
     margin: 0 0.5rem;
+    color: hsl(0, 0%, 100%);
+
 }
 .autor p {
     font-size: 0.9rem;
     margin-top: 0.2rem;
-    color: hsl(0, 0%, 3%);
+    color: hsl(0, 0%, 100%);
 }
 #hamburger {
     display: none;
