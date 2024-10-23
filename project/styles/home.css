@@ -16,36 +16,25 @@
     height: 100vh;
     overflow: hidden;
 }
-.hero-image {
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.hero {
-    position: relative;
-}
-.hero-image {
-    width: 100%;
-    height: 100%;
-}
 .hero-content {
     position: absolute;
-    top: 60%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 .hero-content h1{
     font-size: 3rem;
-    color: hsl(122, 65%, 30%);
-
-    
+    color: hsl(122, 65%, 30%);    
 }
 .hero-content p{
     font-size: 1.5rem;
-    color: hsl(122, 65%, 10%);
-
-    
+    color: hsl(122, 65%, 10%);    
 }
 .cta-button {
     display: inline-block;

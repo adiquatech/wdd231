@@ -8,3 +8,6 @@ The "Chamber of Commerce" project is designed to provide a platform for local bu
 - Directory Page: shows all member of the chamber including their business/organization image, phone, address and email.
 - Join Page: This is the form section where new members can fill up to join the chamber of commerce.
 - Discover Page: These shows all other important information about our website. 
+
+i want to create a product page for my website I need like product, use json file to create the product details, use js to display the product and include modal to show more about each product, the product should be chemicals like herbicides, pesticide and simple farm tool or implement like knapsack sprayer, weeding machine and so on compile the js file, json file, HTML file, product image file into a zip file so I can just download it once.
+again make sure you generate proper image for each product and save all image use in the json into a file
