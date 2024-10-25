@@ -10,7 +10,6 @@
   // Hamburger button
   const hamburger = document.getElementById("hamburger");
   const navbar = document.querySelector(".navLinks");
-
   hamburger.addEventListener("click", () => {
     navbar.classList.toggle("open");
   });
