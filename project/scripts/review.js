@@ -38,18 +38,18 @@ console.log(formData);
 
 // function to get only form value from the array
 function value(value){
+  let results = []
     formData.forEach(element => {
         if(element.startsWith(value)){
-            result = element
+            let result = element
             .replaceAll("+", " ")
-            .replaceAll("%40", "@")
-            .replace("%2B", " ")
-            .split("=")[1]
-            console.log(result)
-        }
+            .split("=")[1] || "";
+            results.push(result);
+          }
     });
-    return(result);
+    return results.length ? results.join(", ") : "Not provided";
 }
+
 
 const timestamp = decodeURIComponent(value("timestamp"));
 console.log(timestamp);
@@ -57,12 +57,11 @@ console.log(timestamp);
 // display result on html
 const showInfo = document.querySelector(".review-details")
 showInfo.innerHTML = `
-<p>Here are your Informations:</p>
 <P>Product: <strong>${value("product")}</strong></P>
 <P>Rating: <strong>${value("rating")} Stars</strong></P>
-<P>Date of Usage: <strong>${value("dateOfInstallation")}</strong></P>
-<p>Product features: <strong>${value("features")}</strong></p>
-<p>Reviewer Statement: <strong>${value("review")}</strong></p>
+<P>Date of Usage: <strong>${value("dateOfUsage")}</strong></P>
+<p style="text-transform: capitalize;">Product features: <strong>${value("features")}</strong></p>
+<p>Reviewer Statement: <em>${value("review")}</em></p>
 <p>Reviewer Name: <strong>${value("userName")}</strong></p>
-<p>Submission: <strong>${timestamp}</strong></p>
+<p>Reviewed on: <strong>${timestamp}</strong></p>
 `;
