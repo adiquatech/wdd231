@@ -17,9 +17,10 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/produts.css">
+    <link rel="stylesheet" href="styles/discovery.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +45,78 @@
     </div>
 
     <main>
-        <h1>Discover page</h1>
+        <main id="discover-main">
+            <section id="sidebar">
+              <div id="event">
+                <h2>Visitor Info</h2>
+                <p id="lastVisitMessage"></p>
+              </div>
+              <div id="event">
+                <h2>City</h2>
+                <img src="../images/place.webp" alt="city image" width="200" height="133" loading="lazy">
+                <h3>Ibadan City</h3>
+                <p>Ibadan is the capital city of Oyo State, Nigeria, and one of the largest cities in Africa by land area. Historically, it was a key city in the Yoruba Empire and became an important center for administration during British colonial rule.</p>
+              </div>
+              
+              <div id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast">
+                    <p id="today"></p>
+                    <p id="day1"></p>
+                    <p id="day2"></p>
+                </div>
+              </div>
+
+              
+      
+            </section>
+      
+            <section id="discover-site">
+      
+                <div id="current-weather" class="site-container">
+                    <h2>Current Weather</h2>
+                    <div id="weather">
+                        <img id="weatherIcon" src="weather.png" alt="weatherIcon">
+                        <div id="weatherInfo">
+                            <p id="city"></p>
+                            <p id="temperature"></p>
+                            <p id="description"></p>
+                            <p id="high"></p>
+                            <p id="low"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+      
+              <div class="site-container">
+                <img src="images/directory/bowers-tower.webp" alt="bowers tower image" loading="lazy">
+                <h2>Bowers Tower Ibadan</h2>
+              </div>
+      
+              <div class="site-container">
+                <img src="images/directory/cocoa_house.webp" alt="cocoa house image" loading="lazy">
+                <h2>cocoa House Ibadan</h2>
+              </div>
+      
+              <div class="site-container">
+                <img src="images/directory/iart.webp" alt="Institute of Agricultural Research Training image" loading="lazy">
+                <h2>Institute of Agricultural Research Training Ibadan</h2>
+              </div>
+      
+              <div class="site-container">
+                <img src="images/directory/iita.webp" alt="International Institute of Tropical Agriculture image" loading="lazy">
+                <h2>International Institute of Tropical Agriculture Ibadan</h2>
+              </div>
+      
+              <div class="site-container">
+                <img src="images/directory/mapo-hall1.webp" alt="Mapo Hall image" loading="lazy">
+                <h2>Mapo Hall Ibadan</h2>
+              </div>
+              
+            </section>
+        
         
        
     </main>
