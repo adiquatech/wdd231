@@ -17,9 +17,9 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/produts.css">
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -44,8 +44,65 @@
     </div>
 
     <main>
-        <h1>Discover page</h1>
-        
+        <form action="review.html" method="get" class="form">
+            <div class="form-control">
+              <label for="product">Product:</label>
+              <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+                <!-- Options will be added here dynamically -->
+              </select>
+            </div>
+            <!-- Start radio buttons -->
+            <div class="form-control">
+              <label>Overall Rating</label>
+              <div class="stars">
+                <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+              </div>
+            </div>
+            <!-- Date of installation -->
+            <div class="form-control">
+              <label for="dateOfInstallation">Date of installation</label>
+              <input type="date" name="dateOfInstallation" id="dateOfInstallation">
+            </div>
+            <!-- Checkbox -->
+            <fieldset class="form-control">
+              <legend>Which features did you find useful in the product (Check all that apply)</legend>
+              <div>
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+              </div>
+              <div>
+                <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse">
+                <label for="easeOfUse">Ease of Use</label>
+              </div>
+              <div>
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+              </div>
+              <div>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+              </div>
+            </fieldset>
+            <!-- Textarea -->
+            <div class="form-control">
+              <label for="review">Written Review (Optional)</label>
+              <textarea id="review" name="review" rows="4" cols="50" style="padding: 10px;"></textarea>
+            </div>
+            <!-- Your name -->
+            <div class="form-control">
+              <label for="userName">Your Name (Optional)</label>
+              <input type="text" id="userName" name="userName">
+            </div>
+            <!-- Submit button -->
+            <div class="form-control">
+              <input type="submit" value="Post Review">
+            </div>
+        </form>        
        
     </main>
 

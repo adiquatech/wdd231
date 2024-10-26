@@ -1,0 +1,106 @@
+
+  
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0); 
+  }
+  
+  .stars {
+    justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+  }
+  
+  .stars > label:hover {
+    color: #000;
+  }
+  
+  .stars > label::before {
+    content: "\2606";
+  }
+  
+  .stars input:checked ~ label::before {
+    content: "\2605";
+  }
+  
+  /* Form Control */
+  .form-control {
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-control select,
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form input[type="submit"] {
+    background-color: hsl(122, 65%, 30%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .form {
+    padding: 10px;
+  }
+
+  /* Review page */
+  #review-content{
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  .review-msg{
+    margin-bottom: 20px;
+    border: double;
+    text-align: center;
+  }
+  .review-details{
+    border: dotted;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px){
+    .form {
+      max-width: 750px;
+      margin: auto;
+    }
+  
+    h1 {
+      max-width: 750px;
+      margin: auto;
+    }
+  }
+  
+  @media screen and (min-width: 450px){
+    .form-control:has(> input[type="submit"]) {
+      display: block;
+    }
+  
+    .form-control input[type="submit"] {
+      padding: 1rem 2rem;
+      display: block;
+      margin: auto;
+    }
+      
+  }

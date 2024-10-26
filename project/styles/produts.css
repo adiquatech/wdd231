@@ -34,9 +34,12 @@
     font-size: 1.25rem;
     margin: 1rem 0;
 }
+.product p{
+    color: hsl(0, 0%, 0%);
+}
 .product .price {
     font-size: 1.5rem;
-    color: hsl(122, 39%, 49%);
+    color: hsl(0, 0%, 0%);
     margin-bottom: 1rem;
 }
 
