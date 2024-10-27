@@ -1,59 +1,59 @@
-{
-    "products": [
-        {
-            "name": "Sunphosate 360SL (Glyphosate Herbicide | 1L)",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "Sunphosate which is a foliar-acting, systemic, non-selective, pre-crop emergency herbicide for the control of annual weeds, perennial grasses, broadleaf weeds, aquatic weeds, and shrubs. It contains 360g Glyphosate per liter in the form of 480 grams per liter isopropylamine salt of soluble liquid.",
-            "price": "₦6,500.00"
-        },
-        {
-            "name": "Precision Seed and Fertilizer Planter",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "The precision seed and fertilizer planter is a manually operated machine with double compartments for seedling and fertilizers. It enables rapid planting, prevents overcrowding and improves crop health and development.",
-            "price": "₦165,000.00"
-        },
-        {
-            "name": "High Quality Knapsack Sprayer (Various Brands) 16 Litres",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "The manually operated Knapsack sprayer is a piece of high-quality spraying equipment used to apply herbicides, pesticides, and fertilizers on agricultural crops, lands etc. It is ideal for the home gardener, pest control, and weed control operator, fumigator etc.",
-            "price": "₦23,000.00"
-        },
-        {
-            "name": "ButaForce ®(Pre-Emergence | Selective | Systemic Herbicide)",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": ">Butaforce is a chloroacetanilide class herbicide known for its pre-emergent activity on weeds/soil. It is indicated for pre-emergence control of annual grasses and some broad-leaved weeds, particularly in rice crops. It is also extensively used in the form of granules in rice as a post-emergence herbicide.",
-            "price": "₦8,000.00"
-        },
-        {
-            "name": "Vitamin A D E (1 Liter)",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "This liquid feed supplement... for poultry comes in 1 Litre packs of powerful vitamin combinations. It is recommended for all laying birds as well as broilers and growers.",
-            "price": "₦10,549.99"
-        },
-        {
-            "name": "Lavaside",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "For Fly Free Farm and Odourless Poultry Manure (250g | 25kg)",
-            "price": "₦30,549.99"
-        },
-        {
-            "name": "Miavit V.T.A liqiud",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "Liquid Feed Supplement of Poultry (1L)",
-            "price": "₦14,374.99"
-        },
-        {
-            "name": "Weedoff Contact Herbicide 1 Litre",
-            "image": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/project/images/products/product_1.webp",
-            "description": "Weedoff is a contact weed killer, containing paraquat; recommended for the control of broadleaf weeds and grasses in arable land.",
-            "price": "₦7,500.00"
-        },
-        {
-            "name": "",
-            "image": "",
-            "description": "",
-            "price": ""
-
-        }
-    ]
-}
+[
+    {
+      "image": "images/products/product_1.webp",
+      "title": "Sunphosate 360SL (Glyphosate Herbicide | 1L)",
+      "shortDescription": "Sunphosate is a foliar-acting herbicide...",
+      "fullDescription": "Sunphosate is a systemic, non-selective herbicide used for controlling annual and perennial weeds. It contains 360g Glyphosate per liter...",
+      "price": "₦6,500.00"
+    },
+    {
+      "image": "images/products/product_2.webp",
+      "title": "Precision Seed and Fertilizer Planter",
+      "shortDescription": "A manually operated machine...",
+      "fullDescription": "The precision seed and fertilizer planter is a manually operated machine with double compartments for seedling and fertilizers. It enables rapid planting, prevents overcrowding, and improves crop health and development...",
+      "price": "₦165,000.00"
+    },
+    {
+      "image": "images/products/product_3.webp",
+      "title": "High Quality Knapsack Sprayer (Various Brands) 16 Litres",
+      "shortDescription": "A high-quality spraying equipment...",
+      "fullDescription": "The manually operated Knapsack sprayer is a piece of high-quality spraying equipment used to apply herbicides, pesticides, and fertilizers on agricultural crops and lands. Ideal for the home gardener, pest control, and fumigation...",
+      "price": "₦23,000.00"
+    },
+    {
+      "image": "images/products/product_4.webp",
+      "title": "ButaForce ®(Pre-Emergence | Selective | Systemic Herbicide)",
+      "shortDescription": "A pre-emergence herbicide for annual weeds...",
+      "fullDescription": "Butaforce is a chloroacetanilide class herbicide known for its pre-emergent activity on weeds. It is indicated for pre-emergence control of annual grasses and some broad-leaved weeds, particularly in rice crops...",
+      "price": "₦8,000.00"
+    },
+    {
+      "image": "images/products/product_5.webp",
+      "title": "Vitamin A D E (1 Liter)",
+      "shortDescription": "A liquid feed supplement for poultry...",
+      "fullDescription": "This liquid feed supplement for poultry comes in 1 Litre packs containing a powerful combination of vitamins. It is recommended for all laying birds, broilers, and growers...",
+      "price": "₦10,549.99"
+    },
+    {
+      "image": "images/products/product_6.webp",
+      "title": "Lavaside",
+      "shortDescription": "Fly-free farm and odourless manure...",
+      "fullDescription": "Lavaside is a product designed to keep farms fly-free and poultry manure odourless. Available in 250g and 25kg packaging...",
+      "price": "₦30,549.99"
+    },
+    {
+      "image": "images/products/product_7.webp",
+      "title": "Miavit V.T.A Liquid",
+      "shortDescription": "Liquid feed supplement for poultry...",
+      "fullDescription": "Miavit V.T.A liquid is a poultry feed supplement that promotes healthy growth and boosts overall bird performance. Comes in 1L packs...",
+      "price": "₦14,374.99"
+    },
+    {
+      "image": "images/products/product_8.webp",
+      "title": "Weedoff Contact Herbicide 1 Litre",
+      "shortDescription": "A contact weed killer containing paraquat...",
+      "fullDescription": "Weedoff is a contact herbicide recommended for the control of broadleaf weeds and grasses in arable land. It contains paraquat as the active ingredient...",
+      "price": "₦7,500.00"
+    }
+  ]
+  

@@ -1,25 +1,57 @@
-// Product
-const url = "https://adiquatech.github.io/wdd231/project/data/products.json"
-const cards = document.getElementById("cards");
+// Fetch the JSON data and display products
+fetch('data/products.json')
+  .then(response => response.json())
+  .then(products => {
+    const container = document.getElementById('product-container');
+    container.innerHTML = '';
 
-async function products() {
-    try{
-        const response = await fetch(url);
-        if (!response.ok) throw new Error("Network response was not ok");
-        const data = await response.json();
-        displayProducts(data.products);
-    } catch (error) {
-        console.error('There has been a problem with your fetch operation:', error);
-    }
-    
+    products.forEach((product, index) => {
+      const productCard = `
+        <div class="product">
+          <img src="${product.image}" alt="${product.title}">
+          <h2>${product.title}</h2>
+          <p>${product.shortDescription}</p>
+          <p class="price">${product.price}</p>
+          <button class="show-more" data-index="${index}">Show More</button>
+        </div>
+      `;
+      container.innerHTML += productCard;
+    });
+
+    // Add event listeners for the "Show More" buttons
+    const showMoreButtons = document.querySelectorAll('.show-more');
+    showMoreButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const productIndex = this.getAttribute('data-index');
+        showModal(products[productIndex]);
+      });
+    });
+  })
+  .catch(error => console.error('Error fetching products:', error));
+
+// Show modal function
+function showModal(product) {
+  const modal = document.getElementById('myModal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalDescription = document.getElementById('modal-description');
+  
+  modalTitle.textContent = product.title;
+  modalDescription.textContent = product.fullDescription;
+  
+  modal.style.display = 'block';
 }
-products();
 
-// Function to display the fetch products in to webpage
-const displayProducts = (products) => {
-    products.forEach(product =>{
-        const card = document.createElement("section");
-        const name = document.createElement("h3");
-        name.textContent = `${products.name}`;
-    })
+// Close modal functionality
+const modal = document.getElementById('myModal');
+const closeModal = document.querySelector('.close');
+
+closeModal.onclick = function() {
+  modal.style.display = 'none';
+}
+
+// Close modal when clicking outside the modal content
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
 }

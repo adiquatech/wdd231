@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
 }
-#event, #nationality, #weather-forecast{
+#event, #weather-forecast{
     width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -19,12 +19,6 @@
 #event p{
     text-align: center;
     padding: 10px;
-}
-#nationality h3{
-    padding: 10px;
-}
-#nationality ul{
-    padding-left: 30px;
 }
 #event img{
     align-self: center;
@@ -37,7 +31,7 @@
 #event p{
     padding: 10px;
 }
-#event h2, #nationality h2, #city h2, #weather-forecast h2{
+#event h2, #weather-forecast h2{
     background-color: hsl(122, 65%, 30%);
     text-align: center;
 }
