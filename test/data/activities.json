@@ -7,7 +7,7 @@
         "price": 150.00,
         "stock": 50,
         "category": "extensions",
-        "image_url": "images/hair_extensions.jpg"
+        "image_url": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/test/images/barbing_activity.jpg"
       },
       {
         "id": 2,
