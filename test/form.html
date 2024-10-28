@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Web Frontend Development I - Odeh Sylvester</title>
+    <meta name="description" content="Directory page">
+    <meta name="author" content="Odeh Sylvester">
+    <meta property="og:title" content="Chamber of E-Commerce for companies in Oluyole Ibadan">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Directory page for my chamber of E-commerce">
+    <meta property="og:url" content="https://sylvanhub.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://postimg.cc/RNFggTph">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class="autor">
+            <img src="images/sylvan.webp" class="profile-pic" alt="Profile picture of Sylvester">
+            <h1 class="name">Sylvester Odeh</h1>
+            <p>Chamber of Commerce</p>
+            <button id="hamburger">&#9776;</button>
+        </section>
+    </header>
+    <div class="navbar">
+        <nav id="navigation">
+            <ul class="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="../index.html">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="join-section">
+            <div id="form-section">
+                <h1>Member Application Form</h1>
+
+                <form method="GET" action="thankyou.html" class="designOne">
+                    <label>First Name <input type="text" name="first" 
+                        required autocomplete="given-name" title="Your First Name"></label>
+
+                    <label>Last Name <input type="text" name="last" 
+                        required autocomplete="family-name" title="Your Last Name"></label>
+
+                    <label for="title">Organization title: <input type="text" name="orgTitle" id="title" 
+                        autocomplete="organization-title" pattern="[a-zA-Z\-\s]{7,}"></label>
+
+                    <label>Email <input type="email" name="email" required placeholder="example@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+
+                    <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" 
+                        title="A Phone Number with dashes" placeholder="123-000-1234"></label>
+
+                <h3>Organization Information</h3>
+                    <label for="orgName">Organization Name: <input type="text" name="orgName" id="orgName"
+                        autocomplete="organization" required></label>
+                    <label for="orgDescription">Organization Description: 
+                        <textarea name="orgDescription" id="orgDescription"></textarea></label>
+
+                <h3>Membership Level</h3>
+                    <label><input type="radio" name="member" value="Baptism"> NP Membership</label>
+                    <label><input type="radio" name="member" value="Initiatory"> Gold Membership</label>
+                    <label><input type="radio" name="member" value="Endowment"> Silver Membership</label>
+                    <label><input type="radio" name="member" value="Sealing"> Bronze Membership</label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <div class="submit">
+                    <input type="submit" value="Apply For Membership">
+                </div>
+                </form>
+            </div>
+
+            <div id="member">
+                <h2 id="member-title">Membership Levels Information</h2>
+                <div id="member-card"></div>
+                <dialog id="mydialog">
+                    <div>
+                        <h2 id="dialog-title">Sample Title</h2>
+                        <button id="close-dialog">X</button> <!-- Corrected the button tag -->
+                    </div>
+                    <p id="dialog-content"></p>
+                </dialog>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="address">
+                <p class="address-name">Odeh Sylvan Chamber of Commerce</p>
+                <p>Adabeji, Oluyole</p>
+                <p>Ibadan, Oyo State, Nigeria</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="images/icons/youtube.png" alt="Youtube" width="30" height="30"></a>
+                <a href="#"><img src="images/icons/twitter.png" alt="Twitter" width="30" height="30"></a>
+                <a href="#"><img src="images/icons/linkedin.png" alt="Instagram" width="30" height="30"></a>
+            </div>
+            <div class="developer">
+                <p>WDD231 Class Project</p>
+                <p>Odeh Sylvester</p>
+                <p class="copyright">
+                    <span class="copyrightIcon">&#169;</span>
+                    <span class="currentyear"></span> 
+                    <span class="authorName">Sylvester Odeh</span> 
+                    <span class="Website">Chamber of Commerce</span>
+                </p>
+                <p class="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
