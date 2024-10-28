@@ -1,57 +1,65 @@
-// Fetch the JSON data and display products
-fetch('data/products.json')
-  .then(response => response.json())
-  .then(products => {
-    const container = document.getElementById('product-container');
-    container.innerHTML = '';
 
-    products.forEach((product, index) => {
-      const productCard = `
-        <div class="product">
-          <img src="${product.image}" alt="${product.title}">
-          <h2>${product.title}</h2>
-          <p>${product.shortDescription}</p>
-          <p class="price">${product.price}</p>
-          <button class="show-more" data-index="${index}">Show More</button>
-        </div>
-      `;
-      container.innerHTML += productCard;
-    });
 
-    // Add event listeners for the "Show More" buttons
-    const showMoreButtons = document.querySelectorAll('.show-more');
-    showMoreButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const productIndex = this.getAttribute('data-index');
-        showModal(products[productIndex]);
-      });
-    });
-  })
-  .catch(error => console.error('Error fetching products:', error));
+const productsUrl = "https://adiquatech.github.io/wdd231/project/data/products.json";
+const productsContainer = document.querySelector("#product-container"); // The container to hold product cards
+const modal = document.querySelector("#myModal"); // Modal element
+const modalTitle = document.querySelector("#modal-title"); // Modal title element
+const modalDescription = document.querySelector("#modal-description"); // Modal description element
+const closeModalButton = document.querySelector(".close"); // Close button for the modal
 
-// Show modal function
-function showModal(product) {
-  const modal = document.getElementById('myModal');
-  const modalTitle = document.getElementById('modal-title');
-  const modalDescription = document.getElementById('modal-description');
-  
-  modalTitle.textContent = product.title;
-  modalDescription.textContent = product.fullDescription;
-  
-  modal.style.display = 'block';
-}
-
-// Close modal functionality
-const modal = document.getElementById('myModal');
-const closeModal = document.querySelector('.close');
-
-closeModal.onclick = function() {
-  modal.style.display = 'none';
-}
+// Close modal event listener
+closeModalButton.addEventListener("click", () => modal.style.display = 'none');
 
 // Close modal when clicking outside the modal content
-window.onclick = function(event) {
-  if (event.target == modal) {
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
     modal.style.display = 'none';
   }
+});
+
+// Fetch JSON data and display product cards
+fetch(productsUrl)
+  .then(response => response.json())
+  .then(data => displayProducts(data))
+  .catch(error => console.error('Error fetching products:', error));
+
+// Function to display products as cards
+function displayProducts(products) {
+  products.forEach((product, index) => {
+    const card = document.createElement("div");
+    card.classList.add("product");
+
+    const image = document.createElement("img");
+    image.src = product.image;
+    image.alt = product.title;
+
+    const title = document.createElement("h2");
+    title.textContent = product.title;
+
+    const shortDescription = document.createElement("p");
+    shortDescription.textContent = product.shortDescription;
+
+    const price = document.createElement("p");
+    price.classList.add("price");
+    price.textContent = product.price;
+
+    const detailsButton = document.createElement("button");
+    detailsButton.textContent = "Show More";
+    detailsButton.setAttribute("data-index", index);
+
+    // Add click event to show modal with full product description
+    detailsButton.addEventListener("click", () => {
+      modalTitle.textContent = product.title;
+      modalDescription.textContent = product.fullDescription;
+      modal.style.display = 'block';
+    });
+
+    card.appendChild(image);
+    card.appendChild(title);
+    card.appendChild(shortDescription);
+    card.appendChild(price);
+    card.appendChild(detailsButton);
+
+    productsContainer.appendChild(card);
+  });
 }
