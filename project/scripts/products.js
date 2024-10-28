@@ -1,11 +1,11 @@
 
 
 const productsUrl = "https://adiquatech.github.io/wdd231/project/data/products.json";
-const productsContainer = document.querySelector("#product-container"); // The container to hold product cards
-const modal = document.querySelector("#myModal"); // Modal element
-const modalTitle = document.querySelector("#modal-title"); // Modal title element
-const modalDescription = document.querySelector("#modal-description"); // Modal description element
-const closeModalButton = document.querySelector(".close"); // Close button for the modal
+const productsContainer = document.querySelector("#product-container");
+const modal = document.querySelector("#myModal");
+const modalTitle = document.querySelector("#modal-title");
+const modalDescription = document.querySelector("#modal-description");
+const closeModalButton = document.querySelector(".close");
 
 // Close modal event listener
 closeModalButton.addEventListener("click", () => modal.style.display = 'none');
@@ -56,8 +56,8 @@ function displayProducts(products) {
 
     card.appendChild(image);
     card.appendChild(title);
-    card.appendChild(shortDescription);
     card.appendChild(price);
+    card.appendChild(shortDescription);
     card.appendChild(detailsButton);
 
     productsContainer.appendChild(card);

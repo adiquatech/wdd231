@@ -1,9 +1,17 @@
 const productArray = [
   { id: 'fc-1888', name: "Sunphosate", averagerating: 4.5 },
+  { id: 'fc-1889', name: "Super Stem Nitrogen Amendment | Organic Black Earth | 1litre Spray", averagerating: 4.5 },
   { id: 'fc-2050', name: "Precision Seed and Fertilizer Planter", averagerating: 4.7 },
+  { id: 'fc-2051', name: "CP15 Evolution Knapsack Sprayer (Standard Model | Cooper Pegler Brand) 15L", averagerating: 4.7 },
   { id: 'fs-1987', name: "High Quality Knapsack Sprayer", averagerating: 3.5 },
+  { id: 'fs-1988', name: "Guard Force Powder Herbicide | Post-emergence |100g", averagerating: 3.5 },
   { id: 'ac-2000', name: "ButaForce", averagerating: 3.9 },
-  { id: 'jj-1969', name: "Vitamin A D E", averagerating: 5.0 },
+  { id: 'ac-2001', name: "Force Up Herbicide | 1liter |", averagerating: 3.9 },
+  { id: 'jj-1964', name: "Rechargeable Knapsack Sprayer (2-in-1 | Hand/Battery Powered)", averagerating: 5.0 },
+  { id: 'jj-1965', name: "Vitamin A D E", averagerating: 5.0 },
+  { id: 'jj-1966', name: "DD Force Insecticide (1 Liter)", averagerating: 5.0 },
+  { id: 'jj-1967', name: "Morigad Germicide - 4L", averagerating: 5.0 },
+  { id: 'jj-1969', name: "Five Star| Fungicide | 100ml", averagerating: 5.0 },
   { id: 'jj-1970', name: "Lavaside", averagerating: 5.0 },
   { id: 'jj-1971', name: "Miavit V.T.A liquid", averagerating: 5.0 },
   { id: 'jj-1972', name: "Weedoff Contact Herbicide", averagerating: 5.0 }

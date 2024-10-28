@@ -43,6 +43,7 @@ function value(value){
         if(element.startsWith(value)){
             let result = element
             .replaceAll("+", " ")
+            .replaceAll("%7C", "|")
             .split("=")[1] || "";
             results.push(result);
           }

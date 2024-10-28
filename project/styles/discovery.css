@@ -2,11 +2,13 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin: 20px;
 }
 
 /* Side bar */
 #sidebar{
     width: 30%;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +19,6 @@
     background-color: hsl(0, 0%, 95%);
 }
 #event p{
-    text-align: center;
     padding: 10px;
 }
 #event img{
@@ -26,12 +27,13 @@
     border-radius: 20px;
 }
 #event h3{
-    text-align: center;
+    padding: 10px;
+
 }
 #event p{
     padding: 10px;
 }
-#event h2, #weather-forecast h2{
+#event h2, #weather-forecast h2, #current-weather h2{
     background-color: hsl(122, 65%, 30%);
     text-align: center;
 }
@@ -41,34 +43,34 @@
 /* Main bar */
 #discover-site{
     width: 70%;
-    padding-left: 20px;
-}
-#discover-site img{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
-#discover-site h2{
-    text-align: center;
-}
-.site-container{
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background-color: hsl(0, 0%, 95%);
-    /* border: 1px solid; */
-    padding: 10px;
 }
 #current-weather{
     display: flex;
     flex-grow: 0.5;
     justify-content: center;
     flex-direction: column;
-    margin-right: 20px;
     background-color: hsl(0, 0%, 95%);
     color: hsl(0, 0%, 0%);
     border: 2px;
-    border-radius: 5px;
+    border-radius: 10px;
+}#weather {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    text-transform: capitalize;
+}
+#weatherIcon {
+    max-width: 300px;
+    height: auto;
+}
+#weatherInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+#weatherInfo p {
+    margin: 1px 0;
 }
 
 
