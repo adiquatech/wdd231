@@ -1,5 +1,3 @@
-
-
 const productsUrl = "https://adiquatech.github.io/wdd231/project/data/products.json";
 const productsContainer = document.querySelector("#product-container");
 const modal = document.querySelector("#myModal");
@@ -17,11 +15,19 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// Fetch JSON data and display product cards
-fetch(productsUrl)
-  .then(response => response.json())
-  .then(data => displayProducts(data))
-  .catch(error => console.error('Error fetching products:', error));
+// Async function to fetch JSON data and display product cards
+async function fetchProducts() {
+  try {
+    const response = await fetch(productsUrl);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    displayProducts(data);
+  } catch (error) {
+    console.error('Error fetching products:', error);
+  }
+}
 
 // Function to display products as cards
 function displayProducts(products) {
@@ -63,3 +69,6 @@ function displayProducts(products) {
     productsContainer.appendChild(card);
   });
 }
+
+// Call the fetch function
+fetchProducts();

@@ -4,10 +4,11 @@
         "id": 1,
         "name": "Premium Human Hair Extensions",
         "description": "100% unprocessed human hair extensions, available in various lengths and colors.",
+        "description": "100% unprocessed human hair extensions, available in various lengths and colors.",
         "price": 150.00,
         "stock": 50,
         "category": "extensions",
-        "image_url": "https://raw.githubusercontent.com/adiquatech/wdd231/refs/heads/main/test/images/barbing_activity.jpg"
+        "image": "images/test/images/barbing_activity.jpg"
       },
       {
         "id": 2,
@@ -16,7 +17,7 @@
         "price": 20.00,
         "stock": 100,
         "category": "braiding",
-        "image_url": "images/braiding_hair.jpg"
+        "image": "images/braiding_hair.jpg"
       },
       {
         "id": 3,
@@ -25,7 +26,7 @@
         "price": 25.00,
         "stock": 75,
         "category": "care",
-        "image_url": "images/hair_care_products.jpg"
+        "image": "images/hair_care_products.jpg"
       },
       {
         "id": 4,
@@ -34,7 +35,7 @@
         "price": 30.00,
         "stock": 30,
         "category": "dreadlocks",
-        "image_url": "images/dreadlock_kit.jpg"
+        "image": "images/dreadlock_kit.jpg"
       },
       {
         "id": 5,
@@ -43,7 +44,7 @@
         "price": 10.00,
         "stock": 200,
         "category": "accessories",
-        "image_url": "images/hair_clips.jpg"
+        "image": "images/hair_clips.jpg"
       },
       {
         "id": 6,
@@ -52,7 +53,7 @@
         "price": 200.00,
         "stock": 40,
         "category": "wigs",
-        "image_url": "images/wigs.jpg"
+        "image": "images/wigs.jpg"
       },
       {
         "id": 7,
@@ -61,7 +62,7 @@
         "price": 15.00,
         "stock": 80,
         "category": "care",
-        "image_url": "images/heat_protectant.jpg"
+        "image": "images/heat_protectant.jpg"
       },
       {
         "id": 8,
@@ -70,7 +71,7 @@
         "price": 12.00,
         "stock": 120,
         "category": "accessories",
-        "image_url": "images/hair_rollers.jpg"
+        "image": "images/hair_rollers.jpg"
       },
       {
         "id": 9,
@@ -79,7 +80,7 @@
         "price": 70.00,
         "stock": 25,
         "category": "tools",
-        "image_url": "images/hair_dryer.jpg"
+        "image": "images/hair_dryer.jpg"
       },
       {
         "id": 10,
@@ -88,7 +89,7 @@
         "price": 65.00,
         "stock": 30,
         "category": "tools",
-        "image_url": "images/hair_straightener.jpg"
+        "image": "images/hair_straightener.jpg"
       },
       {
         "id": 11,
@@ -97,7 +98,7 @@
         "price": 8.00,
         "stock": 150,
         "category": "styling",
-        "image_url": "images/edge_control.jpg"
+        "image": "images/edge_control.jpg"
       },
       {
         "id": 12,
@@ -106,7 +107,7 @@
         "price": 40.00,
         "stock": 20,
         "category": "tools",
-        "image_url": "images/scissors.jpg"
+        "image": "images/scissors.jpg"
       },
       {
         "id": 13,
@@ -115,7 +116,7 @@
         "price": 5.00,
         "stock": 200,
         "category": "accessories",
-        "image_url": "images/braid_cuffs.jpg"
+        "image": "images/braid_cuffs.jpg"
       },
       {
         "id": 14,
@@ -124,7 +125,7 @@
         "price": 35.00,
         "stock": 40,
         "category": "coloring",
-        "image_url": "images/hair_color_kit.jpg"
+        "image": "images/hair_color_kit.jpg"
       },
       {
         "id": 15,
@@ -133,7 +134,7 @@
         "price": 3.00,
         "stock": 300,
         "category": "accessories",
-        "image_url": "images/hair_ties.jpg"
+        "image": "images/hair_ties.jpg"
       },
       {
         "id": 16,
@@ -142,7 +143,7 @@
         "price": 2.00,
         "stock": 150,
         "category": "dreadlocks",
-        "image_url": "images/dreadlock_beads.jpg"
+        "image": "images/dreadlock_beads.jpg"
       },
       {
         "id": 17,
@@ -151,7 +152,7 @@
         "price": 20.00,
         "stock": 50,
         "category": "care",
-        "image_url": "images/hair_mask.jpg"
+        "image": "images/hair_mask.jpg"
       },
       {
         "id": 18,
@@ -160,7 +161,7 @@
         "price": 15.00,
         "stock": 100,
         "category": "tools",
-        "image_url": "images/salon_cape.jpg"
+        "image": "images/salon_cape.jpg"
       },
       {
         "id": 19,
@@ -169,7 +170,7 @@
         "price": 120.00,
         "stock": 15,
         "category": "clippers",
-        "image_url": "images/cordless_clipper_a.jpg"
+        "image": "images/cordless_clipper_a.jpg"
       },
       {
         "id": 20,
@@ -178,7 +179,7 @@
         "price": 100.00,
         "stock": 10,
         "category": "clippers",
-        "image_url": "images/cordless_clipper_b.jpg"
+        "image": "images/cordless_clipper_b.jpg"
       },
       {
         "id": 21,
@@ -187,7 +188,7 @@
         "price": 140.00,
         "stock": 12,
         "category": "clippers",
-        "image_url": "images/cordless_clipper_c.jpg"
+        "image": "images/cordless_clipper_c.jpg"
       },
       {
         "id": 22,
@@ -196,7 +197,7 @@
         "price": 110.00,
         "stock": 8,
         "category": "clippers",
-        "image_url": "images/cordless_clipper_d.jpg"
+        "image": "images/cordless_clipper_d.jpg"
       },
       {
         "id": 23,
@@ -205,7 +206,7 @@
         "price": 130.00,
         "stock": 5,
         "category": "clippers",
-        "image_url": "images/cordless_clipper_e.jpg"
+        "image": "images/cordless_clipper_e.jpg"
       },
       {
         "id": 24,
@@ -214,7 +215,7 @@
         "price": 15.00,
         "stock": 80,
         "category": "attachments",
-        "image_url": "images/expression_braiding_hair.jpg"
+        "image": "images/expression_braiding_hair.jpg"
       },
       {
         "id": 25,
@@ -223,7 +224,7 @@
         "price": 18.00,
         "stock": 60,
         "category": "attachments",
-        "image_url": "images/expression_twists_hair.jpg"
+        "image": "images/expression_twists_hair.jpg"
       },
       {
         "id": 26,
@@ -232,7 +233,7 @@
         "price": 20.00,
         "stock": 50,
         "category": "attachments",
-        "image_url": "images/expression_curly_hair.jpg"
+        "image": "images/expression_curly_hair.jpg"
       },
       {
         "id": 27,
@@ -241,7 +242,7 @@
         "price": 22.00,
         "stock": 40,
         "category": "attachments",
-        "image_url": "images/expression_straight_hair.jpg"
+        "image": "images/expression_straight_hair.jpg"
       },
       {
         "id": 28,
@@ -250,7 +251,7 @@
         "price": 25.00,
         "stock": 30,
         "category": "attachments",
-        "image_url": "images/expression_jumbo_braid.jpg"
+        "image": "images/expression_jumbo_braid.jpg"
       }
     ]
   }
