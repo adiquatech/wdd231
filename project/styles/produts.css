@@ -42,6 +42,20 @@
     color: hsl(0, 0%, 0%);
     margin-bottom: 1rem;
 }
+.product button {
+    background-color: hsl(122, 65%, 30%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .product button:hover {
+    background-color: hsl(122, 65%, 40%);
+  }
 .modal { 
     display: none; 
     position: fixed; 
