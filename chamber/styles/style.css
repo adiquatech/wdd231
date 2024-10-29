@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap; /* Ensures text is visible with fallback font */
-    src: url('fonts/Roboto-Regular.woff2') format('woff2'),
-         url('fonts/Roboto-Regular.woff') format('woff');
-}
+
   
 /* Reset some default styles */
 * {
