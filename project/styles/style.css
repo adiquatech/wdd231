@@ -75,11 +75,11 @@ header {
 }
 .navLinks li:hover{
     background-color: hsl(122, 65%, 40%);
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 .navLinks li.current-menu-item  {
     background-color: hsl(122, 65%, 30%);
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 
 
@@ -154,7 +154,11 @@ footer {
     }
     .navLinks li.current-menu-item a {
         background-color: hsl(122, 65%, 30%);
-        color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+    .navLinks li:hover{
+        background-color: hsl(122, 65%, 40%);
+        color: hsl(0, 0%, 100%);
     }
     #hamburger {
         display: block;
