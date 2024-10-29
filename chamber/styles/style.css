@@ -317,6 +317,7 @@ footer {
 }
 #discover-site img{
     width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
